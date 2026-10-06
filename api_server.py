@@ -57,7 +57,7 @@ def index():
     return jsonify({
         "status": "online",
         "service": "StudyMate Telegram Bot & API Proxy",
-        "bot": "@TESRYINN_BOT"
+        "bot": "@Target_2028_5a_bot"
     })
 
 @app.route('/health', methods=['GET'])
