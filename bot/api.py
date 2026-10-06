@@ -118,20 +118,25 @@ def fetch_lectures(topic_id):
     return [], []
 
 def fetch_video_details(video_id):
-    """Fetch direct stream and PDF links for a lecture with SQLite cache failover."""
+    """Fetch direct stream and PDF links for a lecture with retries & SQLite cache failover."""
     cache_key = f"video_{video_id}"
     cached_data = get_cache(cache_key)
     if cached_data is not None and isinstance(cached_data, dict) and cached_data:
         return cached_data
 
     url = VIDEO_URL.format(video_id)
-    try:
-        res = _SESSION.get(url, headers=HEADERS, timeout=6)
-        if res.status_code == 200:
-            data = res.json()
-            set_cache(cache_key, data)
-            return data
-    except Exception as e:
-        logger.warning(f"Live API for video {video_id} failed ({e}).")
+    import time
+    for attempt in range(3):
+        try:
+            res = _SESSION.get(url, headers=HEADERS, timeout=10)
+            if res.status_code == 200:
+                data = res.json()
+                if data:
+                    set_cache(cache_key, data)
+                    return data
+        except Exception as e:
+            if attempt == 2:
+                logger.warning(f"Live API for video {video_id} failed after attempts ({e}).")
+            time.sleep(0.2)
 
     return {}

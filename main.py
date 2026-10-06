@@ -306,10 +306,49 @@ def send_lecture_details(chat_id, video_id, message_id=None):
     else:
         bot.send_message(chat_id, text, reply_markup=markup)
 
+def fetch_details_with_progress(bot_obj, chat_id, status_msg_id, all_ids, item_label="Links"):
+    total = len(all_ids)
+    video_details_map = {}
+    if not total:
+        return video_details_map
+
+    completed_count = 0
+    last_update_time = [0.0]
+
+    def fetch_one(xid):
+        nonlocal completed_count
+        det = fetch_video_details(xid)
+        completed_count += 1
+        now = time.time()
+        if now - last_update_time[0] >= 2.0 or completed_count == total:
+            last_update_time[0] = now
+            percent = int((completed_count / total) * 100)
+            filled = int(10 * completed_count // total)
+            bar = "█" * filled + "░" * (10 - filled)
+            try:
+                safe_edit_text(
+                    bot_obj,
+                    chat_id,
+                    status_msg_id,
+                    f"⏳ <b>Extracting Real {item_label}...</b>\n\n"
+                    f"📊 <b>Progress:</b> [{bar}] {completed_count}/{total} ({percent}%)\n"
+                    f"<i>Please wait, fetching direct stream & PDF URLs...</i>"
+                )
+            except Exception:
+                pass
+        return xid, det
+
+    with ThreadPoolExecutor(max_workers=25) as ex:
+        results = list(ex.map(fetch_one, all_ids))
+        for xid, det in results:
+            video_details_map[xid] = det
+
+    return video_details_map
+
 def handle_extract_txt(chat_id, course_id):
     status_msg = bot.send_message(
         chat_id,
-        f"⏳ <b>Extracting Real Streaming & PDF Links for Batch ID <code>{course_id}</code>...</b>\n<i>Please wait, collecting all lecture streams...</i>"
+        f"⏳ <b>Extracting Real Streaming & PDF Links for Batch ID <code>{course_id}</code>...</b>\n<i>Please wait, initializing...</i>"
     )
 
     topics = fetch_topics(course_id)
@@ -329,12 +368,7 @@ def handle_extract_txt(chat_id, course_id):
         all_notes.extend(notes)
 
     all_fetch_ids = [v["id"] for v in all_videos if v.get("id")] + [n["id"] for n in all_notes if n.get("id")]
-    video_details_map = {}
-    if all_fetch_ids:
-        with ThreadPoolExecutor(max_workers=35) as ex:
-            results = list(ex.map(fetch_video_details, all_fetch_ids))
-            for xid, det in zip(all_fetch_ids, results):
-                video_details_map[xid] = det
+    video_details_map = fetch_details_with_progress(bot, chat_id, status_msg.message_id, all_fetch_ids, item_label="Lectures & PDFs")
 
     divider_115 = "=" * 115
     sub_divider_115 = "-" * 115
@@ -492,7 +526,7 @@ def handle_extract_txt(chat_id, course_id):
 def handle_dl_all_videos(chat_id, course_id):
     status_msg = bot.send_message(
         chat_id,
-        f"🎬 <b>Preparing Video Downloader File for Batch ID <code>{course_id}</code>...</b>"
+        f"🎬 <b>Preparing Video Downloader File for Batch ID <code>{course_id}</code>...</b>\n<i>Please wait...</i>"
     )
     topics = fetch_topics(course_id)
     if not topics:
@@ -507,13 +541,8 @@ def handle_dl_all_videos(chat_id, course_id):
         topic_lectures[t_id] = videos
         all_videos.extend(videos)
 
-    video_details_map = {}
-    if all_videos:
-        with ThreadPoolExecutor(max_workers=35) as ex:
-            v_ids = [v["id"] for v in all_videos]
-            results = list(ex.map(fetch_video_details, v_ids))
-            for vid, det in zip(v_ids, results):
-                video_details_map[vid] = det
+    v_ids = [v["id"] for v in all_videos if v.get("id")]
+    video_details_map = fetch_details_with_progress(bot, chat_id, status_msg.message_id, v_ids, item_label="Video Stream Links")
 
     lines = [
         "=" * 90,
@@ -554,12 +583,25 @@ def handle_dl_all_videos(chat_id, course_id):
 def handle_dl_all_pdfs(chat_id, course_id):
     status_msg = bot.send_message(
         chat_id,
-        f"📚 <b>Preparing PDF Notes File for Batch ID <code>{course_id}</code>...</b>"
+        f"📚 <b>Preparing PDF Notes File for Batch ID <code>{course_id}</code>...</b>\n<i>Please wait...</i>"
     )
     topics = fetch_topics(course_id)
     if not topics:
         safe_edit_text(bot, chat_id, status_msg.message_id, f"❌ No topics found for Batch ID <code>{course_id}</code>.")
         return
+
+    topic_lectures = {}
+    all_notes = []
+    all_videos = []
+    for topic in topics:
+        t_id = topic.get("id")
+        videos, notes = fetch_lectures(t_id)
+        topic_lectures[t_id] = (videos, notes)
+        all_notes.extend(notes)
+        all_videos.extend(videos)
+
+    all_fetch_ids = [n["id"] for n in all_notes if n.get("id")]
+    video_details_map = fetch_details_with_progress(bot, chat_id, status_msg.message_id, all_fetch_ids, item_label="PDF Notes")
 
     lines = [
         "=" * 90,
@@ -571,14 +613,24 @@ def handle_dl_all_pdfs(chat_id, course_id):
     for topic in topics:
         t_id = topic.get("id")
         t_name = topic.get("name", f"Topic {t_id}")
-        videos, notes = fetch_lectures(t_id)
+        videos, notes = topic_lectures.get(t_id, ([], []))
 
         topic_pdfs = []
         for v in videos:
             for p in (v.get("pdfs") or []):
-                topic_pdfs.append((p.get("title") or v.get("name", "Lecture Note"), p.get("url")))
+                p_url = p.get("url")
+                if p_url:
+                    topic_pdfs.append((p.get("title") or v.get("name", "Lecture Note"), p_url))
         for n in notes:
-            topic_pdfs.append((n.get("name", "Class Note"), f"https://study-mate.in/api/video/{n.get('id')}"))
+            n_id = n.get("id")
+            n_name = n.get("name", "Class Note")
+            n_details = video_details_map.get(n_id, {})
+            download_url = n_details.get("video_url")
+            if not download_url and n_details.get("pdfs"):
+                download_url = n_details.get("pdfs")[0].get("url")
+            if not download_url:
+                download_url = f"https://study-mate.in/api/video/{n_id}"
+            topic_pdfs.append((n_name, download_url))
 
         if topic_pdfs:
             lines.append(f"\n📁 TOPIC: {t_name} (ID: {t_id}) | PDFs: {len(topic_pdfs)}")

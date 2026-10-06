@@ -664,6 +664,24 @@ async def download_all_pdfs_handler(update: Update, context: ContextTypes.DEFAUL
         await status_msg.edit_text(f"❌ No topics found for Batch ID `{course_id}`.", parse_mode="Markdown")
         return
 
+    topic_lectures = {}
+    all_notes = []
+    all_videos = []
+    for topic in topics:
+        t_id = topic.get("id")
+        videos, notes = fetch_lectures(t_id)
+        topic_lectures[t_id] = (videos, notes)
+        all_notes.extend(notes)
+        all_videos.extend(videos)
+
+    all_fetch_ids = [n["id"] for n in all_notes if n.get("id")]
+    video_details_map = {}
+    if all_fetch_ids:
+        with ThreadPoolExecutor(max_workers=35) as ex:
+            results = list(ex.map(fetch_video_details, all_fetch_ids))
+            for xid, det in zip(all_fetch_ids, results):
+                video_details_map[xid] = det
+
     lines = [
         "=" * 90,
         "KGS IAS - ALL CLASS PDF NOTES & STUDY MATERIAL",
@@ -677,15 +695,25 @@ async def download_all_pdfs_handler(update: Update, context: ContextTypes.DEFAUL
     for topic in topics:
         t_id = topic.get("id")
         t_name = topic.get("name", f"Topic {t_id}")
-        videos, notes = fetch_lectures(t_id)
+        videos, notes = topic_lectures.get(t_id, ([], []))
 
         topic_pdfs = []
         for v in videos:
             for p in (v.get("pdfs") or []):
-                topic_pdfs.append((p.get("title") or v.get("name", "Lecture Note"), p.get("url")))
+                p_url = p.get("url")
+                if p_url:
+                    topic_pdfs.append((p.get("title") or v.get("name", "Lecture Note"), p_url))
 
         for n in notes:
-            topic_pdfs.append((n.get("name", "Class Note"), f"https://study-mate.in/api/video/{n.get('id')}"))
+            n_id = n.get("id")
+            n_name = n.get("name", "Class Note")
+            n_details = video_details_map.get(n_id, {})
+            download_url = n_details.get("video_url")
+            if not download_url and n_details.get("pdfs"):
+                download_url = n_details.get("pdfs")[0].get("url")
+            if not download_url:
+                download_url = f"https://study-mate.in/api/video/{n_id}"
+            topic_pdfs.append((n_name, download_url))
 
         if topic_pdfs:
             lines.append(f"\n📁 TOPIC: {t_name} (ID: {t_id}) | PDFs: {len(topic_pdfs)}")
