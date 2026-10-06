@@ -341,7 +341,7 @@ def handle_extract_txt(chat_id, course_id):
 
     lines = [
         divider_115,
-        f"                       STUDY-MATE BATCH {course_id} - COMPLETE LECTURES (VIDEOS) & NOTES (PDFs)",
+        f"                         KGS IAS BATCH {course_id} - COMPLETE LECTURES (VIDEOS) & NOTES (PDFs)",
         "                                   (100% Complete - Har Lecture Aur Note Ka Link)",
         divider_115,
         ""
@@ -374,7 +374,6 @@ def handle_extract_txt(chat_id, course_id):
 
         lines.append(divider_115)
         lines.append(f"📁 [{t_idx:02d}] {t_name} (Topic ID: {t_id})")
-        lines.append(f"🌐 Topic Webpage: https://www.study-mate.in/lesson.html?lesson_id={t_id}")
         lines.append(f"📊 Summary: {len(videos)} Lectures | {len(notes)} PDF Notes")
         lines.append(sub_divider_115)
 

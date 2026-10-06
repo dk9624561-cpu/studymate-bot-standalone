@@ -369,7 +369,7 @@ async def extract_all_links_txt(update: Update, context: ContextTypes.DEFAULT_TY
 
     lines = [
         divider_115,
-        f"                       STUDY-MATE BATCH {course_id} - COMPLETE LECTURES (VIDEOS) & NOTES (PDFs)",
+        f"                         KGS IAS BATCH {course_id} - COMPLETE LECTURES (VIDEOS) & NOTES (PDFs)",
         "                                   (100% Complete - Har Lecture Aur Note Ka Link)",
         divider_115,
         ""
@@ -402,7 +402,6 @@ async def extract_all_links_txt(update: Update, context: ContextTypes.DEFAULT_TY
 
         lines.append(divider_115)
         lines.append(f"📁 [{t_idx:02d}] {t_name} (Topic ID: {t_id})")
-        lines.append(f"🌐 Topic Webpage: https://www.study-mate.in/lesson.html?lesson_id={t_id}")
         lines.append(f"📊 Summary: {len(videos)} Lectures | {len(notes)} PDF Notes")
         lines.append(sub_divider_115)
 
