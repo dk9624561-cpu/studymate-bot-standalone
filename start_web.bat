@@ -1,0 +1,3 @@
+@echo off
+echo Starting StudyMate Web Bot Application...
+python -m http.server 3000 --directory web_app

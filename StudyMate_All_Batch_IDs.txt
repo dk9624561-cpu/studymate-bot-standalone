@@ -1,0 +1,1097 @@
+==========================================================================================
+                          KGS IAS BATCHES: NAME, DATE & BATCH ID
+==========================================================================================
+TOTAL BATCHES: 1089
+------------------------------------------------------------------------------------------
+BATCH ID     | START DATE     | BATCH NAME
+------------------------------------------------------------------------------------------
+1255         | 2026-10-01     | Computer Foundation
+1254         | 2026-09-26     | UPPCS Prelims Mentorship (अस्तित्व 3.1) Online
+1253         | 2026-09-26     | UPPCS Prelims Mentorship (अस्तित्व 3.1) Offline
+1252         | 2026-09-24     | Reasoning Foundation 3.0 Batch 2026
+1251         | 2026-09-24     | Reasoning Foundation 3.0 Batch 2026
+1250         | 2026-09-22     | UP Assistant Professor 2026 (Hindi)
+1249         | 2026-09-22     | UP Assistant Professor 2026 (English)
+1248         | 2026-09-22     | UP Assistant Professor 2026 (Economics)
+1247         | 2026-09-22     | UP Assistant Professor 2026 (Home Science)
+1246         | 2026-09-22     | UP Assistant Professor 2026 (Sociology)
+1245         | 2026-09-22     | UP Assistant Professor 2026 (Commerce)
+1244         | 2026-09-22     | UP Assistant Professor 2026 (Political Science)
+1243         | 2026-09-22     | UP Assistant Professor 2026 (Geography)
+1242         | 2026-09-22     | UP Assistant Professor 2026 (History)
+1241         | 2026-09-28     | Railway Mahapack 2.0 -2026-27
+1240         | 2026-09-12     | History Optional-Recorded Batch (Hindi Medium)
+1239         | 2026-09-12     | History Optional (Recorded Batch) English Medium
+1233         | 2026-09-30     | NCERT प्रयास BATCH 2026
+1232         | 2026-09-23     | UPSC Hindi Literature Optional Paper (Online Batch)
+1231         | 2026-09-23     | UPSC Hindi Literature Optional Paper (Offline Batch, Prayagraj)
+1230         | 2026-09-24     | UPSC (Pre + Mains) Foundation Batch 2028 English Medium (Offline Karol Bagh, Delhi)
+1229         | 2026-09-28     | UPSC (Pre + Mains) Foundation Batch 2028 Hindi Medium (Offline Azadpur, Delhi)
+1228         | 2026-09-10     | BSTET 2026 Paper-1 Recorded Batch
+1227         | 2026-10-07     | SSC Foundation Morning Batch offline Prayagraj 2026-27
+1226         | 2026-09-28     | UPSC & UPPSC (Pre + Mains) Foundation Batch 2028 English Medium (Offline Prayagraj)
+1225         | 2026-09-28     | UPSC & UPPSC (Pre + Mains) Foundation Batch 2028 Hindi Medium (Offline Prayagraj)
+1224         | 2026-09-15     | RRB JE Civil Batch 2026
+1223         | 2026-09-21     | BPSC TRE 4.0 (9-10 & 11-12) Batch
+1222         | 2026-09-21     | BPSC TRE 4.0 (6 To 8 ) Batch
+1221         | 2026-09-21     | BPSC TRE 4.0 (1 To 5) BATCH
+1220         | 2026-10-06     | 73rd BPSC Foundation Batch 11 (Musallahpur)
+1219         | 2026-10-06     | 73rd BPSC Foundation Batch 11 (Hindi Medium)
+1218         | 2026-09-07     | MPSI (PRE) 2026 Target Batch
+1208         | 2026-09-15     | UPSC EPFO APFC 2026 Prelims Batch
+1207         | 2026-09-01     | RRB ग्रामीण BANK PO/CLERK लक्ष्य Batch-2026
+1205         | 2026-08-31     | SSC GD Foundation Batch 2026-2027
+1204         | 2026-09-01     | UPPSC Crash Course 2026
+1203         | 2026-09-01     | UP TGT & PGT उड़ान बैच (General Studies )
+1202         | 2026-09-01     | UP TGT उड़ान बैच (SCIENCE)
+1201         | 2026-09-01     | UP TGT उड़ान बैच 2026 (Mathematics)
+1200         | 2026-09-01     | UP TGT उड़ान बैच 2026 (Hindi)
+1199         | 2026-09-01     | UP TGT उड़ान बैच 2026 (English)
+1198         | 2026-09-01     | UP TGT उड़ान बैच 2026 (Home Science)
+1197         | 2026-09-05     | UP TGT उड़ान बैच 2026 (Social Science)
+1196         | 2026-09-21     | CDS 1 2027 प्रखर 2.0 Batch
+1195         | 2026-09-21     | CDS OTA 1 2027 प्रतिष्ठा 2.0 Batch
+1194         | 2026-09-21     | NDA 1 2027 योद्धा 2.0 Batch
+1193         | 2026-09-01     | CLAT Online Live Batch 2027 English Medium
+1191         | 2026-08-18     | Bihar Police Batch 2026
+1190         | 2026-08-20     | Bihar Daroga Batch 2026
+1189         | 2026-09-07     | Railway Foundation Batch 2026 (Prayagraj Offline)
+1188         | 2026-08-17     | CLERK Foundation Batch 2026-27
+1187         | 2026-08-06     | MPESB Group 2 (Sub Group 4) Batch 2026
+1186         | 2026-08-20     | Sociology Optional English Medium (Karol bagh)
+1185         | 2026-09-23     | CDS-1 2027 Target Batch (Dehradun Offline)
+1184         | 2026-09-23     | NDA-1 2027 Target Batch (Dehradun Offline)
+1183         | 2026-08-10     | MPPSC Sociology Module 2026
+1182         | 2026-08-04     | 72nd BPSC Mains Batch (Hindi Medium)
+1181         | 2026-08-06     | 72nd BPSC Mains Batch (Bilingual)
+1179         | 2026-08-13     | Economics Foundation by Khan Sir
+1178         | 2026-08-20     | Biology Foundation by Khan Sir
+1177         | 2026-08-18     | History Foundation by Khan Sir
+1176         | 2026-08-20     | 73rd BPSC Foundation Batch 7 (Boring Road)
+1175         | 2026-08-20     | 73rd BPSC Foundation Batch 7- Online (Bilingual)
+1174         | 2026-08-03     | UP SI Daroga Moolvidhi + Polity 2026-2027
+1173         | 2026-08-03     | UP SI DAROGA Batch 2026-2027
+1172         | 2026-07-26     | Software Development
+1171         | 2026-07-23     | World Map By Khan Sir (Recorded)
+1170         | 2026-08-17     | UPSC (Pre+Mains) Foundation Batch 2027 English Medium (Karol Bagh)
+1169         | 2026-07-29     | BPSSC Mission Officer Batch 2026
+1168         | 2026-08-17     | CAPF Foundation Batch 2027
+1167         | 2026-08-17     | CDS + CAPF Batch 2027 (Dehradun Offline)
+1166         | 2026-08-04     | Maths Foundation by Shubham Sir 2026
+1165         | 2026-08-03     | Maths Special 1.0 by Prashant Sir
+1164         | 2026-07-21     | Super TET (Junior Teacher- SST) Batch 2026
+1163         | 2026-07-21     | Super TET (Junior Teacher- Maths & Science) Batch 2026
+1162         | 2026-07-21     | Super TET (Junior Teacher- Sanskrit) Batch 2026
+1161         | 2026-07-21     | Super TET (Junior Teacher- English) Batch 2026
+1160         | 2026-07-21     | Super TET (Junior Teacher- Hindi) Batch 2026
+1159         | 2026-07-21     | Super TET (Primary Teacher) Batch 2026
+1157         | 2026-07-07     | Rajasthan CET लक्ष्य Batch 2026
+1156         | 2026-07-07     | MP Agriculture Officer Batch 2026
+1155         | 2026-07-21     | NEET 2027 Repeater Batch Online Bilingual Mode
+1154         | 2026-07-21     | JE (Electrical) Engineering Foundation Batch 2026
+1153         | 2026-07-30     | 73rd BPSC Foundation Batch 10 (Hindi Medium)
+1152         | 2026-07-30     | 73rd BPSC Foundation Batch 10 (Musallahpur Offline)
+1151         | 2026-07-02     | SCIENCE FOUNDATION BATCH 2026
+1149         | 2026-07-05     | Sociology Optional Mains Test Series & Mentorship 2026
+1148         | 2026-07-06     | UGC NET/JRF Paper 2 Home Science सफलता FOUNDATION Dec 2026
+1147         | 2026-07-06     | UGC NET/JRF Paper 2 Sociology  सफलता FOUNDATION Dec 2026
+1146         | 2026-07-06     | UGC NET/JRF Paper 2 Commerce  सफलता FOUNDATION Dec 2026
+1145         | 2026-07-06     | UGC NET/JRF Paper 2 Economics  सफलता FOUNDATION Dec 2026
+1144         | 2026-07-06     | UGC NET/JRF Paper 2 Political Science सफलता FOUNDATION Dec 2026
+1143         | 2026-07-06     | UGC NET/JRF Paper 2 Geography  सफलता FOUNDATION Dec 2026
+1142         | 2026-07-06     | UGC NET/JRF Paper 2 History  सफलता FOUNDATION Dec 2026
+1141         | 2026-07-06     | UGC NET/JRF Paper 2 Hindi  सफलता FOUNDATION Dec 2026
+1140         | 2026-07-06     | UGC NET/JRF  Paper 2 English सफलता FOUNDATION Dec 2026
+1139         | 2026-07-06     | UGC NET/JRF Paper -1 सफलता FOUNDATION Dec 2026
+1138         | 2026-06-28     | History Optional Mains Test Series & Mentorship 2026 (English Medium)
+1137         | 2026-06-28     | History Optional Mains Test Series & Mentorship 2026
+1136         | 2026-06-28     | Hindi Literature Optional Mains Test Series & Mentorship 2026
+1135         | 2026-06-28     | Public Administration Optional Mains Test Series & Mentorship 2026
+1134         | 2026-06-21     | Geography Optional Mains Test Series & Mentorship 2026 (Offline)
+1133         | 2026-06-21     | Geography Optional Mains Test Series & Mentorship 2026 (Online)
+1132         | 2026-07-09     | Repeater Yearlong Offline Bilingual Batch Delhi NEET 2027
+1131         | 2026-07-09     | Repeater Yearlong Offline Bilingual Batch Prayagraj NEET 2027
+1130         | 2026-07-09     | Repeater Yearlong Offline Bilingual Batch Musallahpur Hat NEET 2027
+1129         | 2026-07-09     | Repeater Yearlong Offline Bilingual Batch Boring Road NEET 2027
+1128         | 2026-07-01     | Biology Foundation Batch 4.0 by Amrita Ma’am
+1127         | 2026-06-16     | Maths Foundation Batch By Gaurav Sir
+1126         | 2026-06-28     | UPSC Parivartan Mentorship Programme (Hindi Medium)
+1125         | 2026-06-28     | UPSC Parivartan Mentorship Programme (English Medium)
+1124         | 2026-06-28     | UPSC Parivartan Mentorship Programme (Offline Hindi)
+1123         | 2026-06-28     | UPSC Parivartan Mentorship Programme (Offline English)
+1122         | 2026-06-22     | Reasoning Foundation Batch 2026 by Yogendra Sir
+1121         | 2026-06-29     | SSC Mahapack Batch 2026
+1120         | 2026-07-07     | Anthropology Optional Batch - English Medium
+1119         | 2026-07-16     | Sociology Optional Online - Hindi Medium
+1117         | 2026-07-02     | SSC FOUNDATION शिखर बैच -2026-27
+1115         | 2026-06-22     | UPSC & UPPSC (Pre + Mains) Foundation Batch 2027 Hindi Medium (Offline Prayagraj)
+1114         | 2026-06-10     | SBI PO/CLERK (Pre+Mains) TARGET BATCH 2026
+1113         | 2026-06-18     | Varchasva JE (Civil) Foundation Batch 2026
+1111         | 2026-06-11     | UPPCS Mentorship 2026 (Offline)
+1110         | 2026-06-11     | UPPCS Mentorship 2026 (Online)
+1109         | 2026-06-04     | UPSC - Essay & Ethics Module (English Medium) Batch
+1108         | 2026-07-20     | PSIR Optional (Hindi Medium) Batch
+1107         | 2026-07-20     | Sociology Optional ( English Medium) Batch
+1106         | 2026-07-21     | Public Administration Optional ( English Medium) Batch
+1105         | 2026-06-22     | UPPSC Foundation Batch 2027 (Hindi Medium)
+1104         | 2026-06-22     | UPPSC Foundation Batch 2027 (English Medium)
+1103         | 2026-05-28     | Hindi Literature Optional Prayagraj Offline
+1102         | 2026-05-26     | CDS Foundation
+1101         | 2026-06-02     | TARGET MPPSC MAINS-2026 Answer Writing Program
+1100         | 2026-06-22     | UPSC (Pre + Mains) Foundation Batch 2027 (Hindi Medium)
+1099         | 2026-06-22     | UPSC (Pre + Mains) Foundation Batch 2027 (English Medium)
+1098         | 2026-06-15     | NCERT Foundation Batch - English Medium
+1097         | 2026-06-08     | NCERT Foundation Batch - Hindi Medium
+1096         | 2026-06-04     | Bihar SSC BSO/SSO CGL 4 Practice Batch 2026
+1095         | 2026-05-21     | UGC NET/JRF
+1094         | 2026-05-21     | SSC Foundation
+1093         | 2026-05-21     | UPSC Foundation
+1092         | 2026-06-09     | Dropper Yearlong Offline Bilingual Batch – II Prayagraj JEE 2027
+1091         | 2026-06-09     | Dropper Yearlong Offline Bilingual Batch – II Prayagraj NEET 2027
+1090         | 2026-06-15     | RAILWAY MAHAPACK 2027
+1089         | 2026-05-20     | Rajasthan SI Officer Batch 2.0
+1088         | 2026-06-01     | UPSC (3 Year) Foundation Batch-Hindi Medium
+1087         | 2026-05-14     | UP Police constable Foundation batch 2026-2027
+1086         | 2026-05-19     | UPSC & UPPSC (Pre + Mains) Foundation Batch 2027 English Medium (Offline Prayagraj)
+1085         | 2026-06-02     | MPPSC Foundation Batch 2027
+1084         | 2026-07-07     | UPSC GS Foundation Batch 2027 English Medium (Boring Road)
+1083         | 2026-05-25     | CTET September 2026 (Paper-2) लक्ष्य Batch
+1082         | 2026-05-25     | CTET SEPTEMBER 2026 (PAPER -1) लक्ष्य Batch
+1081         | 2026-06-01     | UPSC (3 Year) Foundation Batch-Hindi Medium (Prayagraj)
+1080         | 2026-05-28     | Class 11th Offline Yearlong Bilingual Batch - II Musallahpur Hat JEE 2028
+1079         | 2026-05-28     | Class 11th Offline Yearlong Bilingual Batch - II Boring Road JEE 2028
+1078         | 2026-05-28     | Class 11th Offline Yearlong Bilingual Batch - II  Musallahpur Road NEET 2028
+1077         | 2026-05-28     | Class 11th Offline Yearlong Bilingual Batch - II  Boring Road NEET 2028
+1076         | 2026-06-11     | UP Police Mahapack 2026
+1074         | 2026-05-26     | Dropper Yearlong Offline Bilingual Batch – II Musallahpur Hat NEET 2027
+1073         | 2026-05-26     | Dropper Yearlong Offline Bilingual Batch – II Boring Road NEET 2027
+1072         | 2026-05-25     | English Foundation 2.0 by Juhi Ma’am
+1071         | 2026-05-11     | MP Hospital Assistant 2026
+1070         | 2026-05-11     | UGC NET/JRF PAPER 1 PRACTICE BATCH
+1069         | 2026-05-11     | Fluid Mechanics Mastery Batch
+1068         | 2026-05-07     | Bihar Daroga हवलदार अधिनायक Batch 2026
+1067         | 2026-05-05     | विजेता 3.0 बैच – 72nd BPSC Prelims Exam
+1066         | 2026-04-26     | CAPF (ASSISTANT COMMANDANTS) Interview Guidance Programme 2025
+1065         | 2026-05-04     | MP Police Constable Batch 2026
+1064         | 2026-05-26     | UPSC Hindi Literature Optional Paper (Online Batch)
+1063         | 2026-05-05     | NEET Individual Physics By Mohit Agarwal Sir
+1062         | 2026-05-05     | NEET Biology Batch by Guru Sir & Anil Sir
+1061         | 2026-04-20     | Army (Nursing Assistant) Batch
+1060         | 2026-04-20     | Army GD & Tradesman Batch
+1059         | 2026-04-28     | UPSC (Pre+Mains) Foundation Batch 2027 Hindi Medium (Azadpur, Delhi)
+1058         | 2026-04-28     | UPSC (Pre+Mains) Foundation Batch 2027 English Medium (Karol Bagh)
+1056         | 2026-05-04     | UPSSSC PET Foundation  Batch 2026
+1055         | 2026-04-20     | Bihar Police (Radio Operator) Batch 2026
+1054         | 2026-04-14     | Bihar Police Practice Batch 2026
+1053         | 2026-04-30     | SSC (TIER-I & II) Foundation Batch 2026-27(Prayagraj)
+1052         | 2026-05-05     | Class 11th VISION BATCH JEE 2028 BILINGUAL
+1051         | 2026-05-05     | Class 11th VISION BATCH NEET 2028 English
+1050         | 2026-05-05     | Class 11th VISION BATCH NEET 2028 Hindi
+1049         | 2026-05-05     | Class 12th/ 12th Pass MISSION BATCH JEE 2027 BILINGUAL
+1048         | 2026-05-05     | Class 12th/ 12th Pass MISSION BATCH NEET 2027 English
+1047         | 2026-05-05     | Class 12th/ 12th Pass MISSION BATCH NEET 2027 Hindi
+1046         | 2026-04-27     | English 1 Year Foundation Batch
+1045         | 2026-04-27     | Science 1 Year Foundation Batch
+1044         | 2026-04-27     | Mathematics 1 Year Foundation Batch
+1043         | 2026-04-27     | NDA Dixit 1.0 Foundation Batch
+1042         | 2026-04-07     | UPTET 2026 प्रतिज्ञा Target Batch for (Paper- 1)
+1041         | 2026-04-07     | UPTET 2026 प्रतिज्ञा Target Batch for (Paper- 2)
+1040         | 2026-03-20     | UPSC Geography Optional Recorded Batch (English Medium) Target UPSC CSE Mains 2026
+1039         | 2026-04-20     | UPSC Public Administration Optional Recorded Batch (English Medium) Target UPSC CSE Mains 2026
+1038         | 2026-04-20     | UPSC PSIR Optional Recorded Batch (Hindi Medium) - Target UPSC CSE Mains 2026
+1037         | 2026-04-20     | UPSC Sociology Optional Recorded Batch (English Medium) Target UPSC CSE Mains 2026.
+1036         | 2026-04-20     | UPSC Hindi Optional Recorded Batch - Target UPSC CSE Mains 2026
+1035         | 2026-04-20     | UPSC History Optional (English Medium) Recorded Batch – Target: UPSC CSE Mains 2026.
+1033         | 2026-04-15     | UPSC (Pre + Mains) Foundation Batch 2027 (English Medium)
+1032         | 2026-04-15     | NCERT Foundation Batch 2026 (English Medium)
+1031         | 2026-04-15     | NCERT Foundation Batch 2026 (Hindi Medium)
+1029         | 2026-04-10     | UPPSC Foundation Batch 2026
+1028         | 2026-04-16     | UPSC (3 Year) Foundation Batch-Hindi Medium
+1027         | 2026-04-16     | UPSC (3 Year) Foundation Batch-Hindi Medium (Prayagraj)
+1026         | 2026-04-16     | UPSC & UPPSC (Pre + Mains) Foundation Batch 2027 English Medium (Offline  Prayagraj)
+1025         | 2026-04-16     | UPSC & UPPSC (Pre + Mains) Foundation Batch 2027 Hindi Medium (Offline Prayagraj)
+1024         | 2026-04-16     | CDS OTA 02 2026 Pratishta Batch
+1023         | 2026-04-16     | NDA 02 2026 YODHA Batch
+1022         | 2026-04-16     | CDS 02 2026 Prakhar Batch
+1021         | 2026-04-09     | 73rd BPSC Foundation Batch-9 (Offline)
+1020         | 2026-04-09     | 73rd BPSC Foundation Batch-9
+1019         | 2026-04-01     | UP SI Sankalp Recorded Batch
+1018         | 2026-03-25     | UPSC (Pre + Mains) Foundation Batch 2027 (Hindi Medium)
+1017         | 2026-03-12     | UPSSSC JE 2024 Recorded Batch
+1016         | 2026-04-15     | NDA 2 2026 Target Batch  (Dehradun Offline)
+1015         | 2026-04-15     | CDS 2 2026 Target Batch  (Dehradun Offline)
+1014         | 2026-03-23     | SSC CHSL Tier I & II Recorded & Practice batch
+1013         | 2026-04-21     | Class 11th Offline Yearlong Bilingual Batch Delhi NEET 2028
+1012         | 2026-04-21     | Class 12th/12th Pass Offline Yearlong Bilingual Batch Delhi NEET 2027
+1011         | 2026-04-21     | Class 11th Offline Yearlong Bilingual Batch Dehradun NEET 2028
+1010         | 2026-04-21     | Class 12th/12th Pass Offline Yearlong Bilingual Batch Dehradun NEET 2027
+1009         | 2026-03-23     | RRB ALP CBT 1 & 2 रेल पायलट Batch 2026
+1008         | 2026-03-12     | IB ACIO Grade-II/Executive Interview Batch
+1007         | 2026-04-09     | 73rd BPSC Offline Foundation Batch (English Medium)-Boring Road
+1006         | 2026-04-09     | 73rd BPSC Foundation Batch (English Medium)
+1005         | 2026-03-10     | 72nd BPSC Prelims – Current Affairs Batch
+1004         | 2026-03-10     | Civil Engineering  (Geotechnical, Fluid Mechanics, Environmental Eng.) Elite Batch
+1003         | 2026-02-27     | RRB ALP CBT-2 Recorded Batch 2026
+1001         | 2026-03-06     | RBI ASSISTANT (Pre+Mains) TARGET BATCH 2026
+1000         | 2026-03-05     | BPSC TRE 4.0 Class (9-10 & 11-12) Batch 2026
+999          | 2026-03-05     | BPSC TRE 4.0 Class (6-8) Batch 2026
+998          | 2026-03-05     | BPSC TRE 4.0 Class (1-5) Batch 2026
+997          | 2026-03-24     | Bihar Daroga Foundation Batch 2026
+996          | 2026-04-14     | Physics Foundation by Khan Sir 2026
+995          | 2026-04-07     | Geography Foundation by Khan Sir 2026
+994          | 2026-04-07     | Dropper Yearlong Offline Bilingual Batch Prayagraj NEET 2027
+993          | 2026-03-26     | UPSC Foundation Batch 2028 (Musallahpur)
+992          | 2026-03-24     | UPSC Foundation Batch 2028 (Boring Road)
+991          | 2026-02-23     | MPPSC Prelims Batch 2026
+990          | 2026-03-18     | Bihar Daroga (ASI Operator) PT+Mains Batch
+989          | 2026-02-23     | CAPF PAPER - II Batch 2026
+988          | 2026-02-23     | CAPF PAPER -II Dehradun Offline Batch
+987          | 2026-04-07     | Dropper Yearlong Offline Bilingual Batch Musallahpur Hat JEE 2027
+986          | 2026-04-07     | Dropper Yearlong Offline Bilingual Batch Boring Road JEE 2027
+985          | 2026-04-07     | Dropper Yearlong Offline Bilingual Batch Musallahpur Hat NEET 2027
+984          | 2026-04-07     | Dropper Yearlong Offline Bilingual Batch Boring Road NEET 2027
+983          | 2026-04-09     | Class 11th Offline Yearlong Bilingual Batch Prayagraj JEE 2028
+982          | 2026-04-09     | Class 11th Offline Yearlong Bilingual Batch Musallahpur Hat JEE 2028
+981          | 2026-04-09     | Class 11th Offline Yearlong Bilingual Batch Boring Road JEE 2028
+980          | 2026-04-09     | Class 11th Offline Yearlong Bilingual Batch Prayagraj NEET 2028
+979          | 2026-04-09     | Class 11th Offline Yearlong Bilingual Batch Musallahpur Hat NEET 2028
+978          | 2026-04-09     | Class 11th Offline Yearlong Bilingual Batch Boring Road NEET 2028
+977          | 2026-03-10     | IBPS PO/CLERK (Pre+Mains) TARGET BATCH 2026
+976          | 2026-03-26     | 73rd BPSC Foundation Batch-VI (Boring Road)
+975          | 2026-03-26     | 73rd BPSC Foundation Batch-VI (Bilingual)
+974          | 2026-03-10     | Bihar Police सिपाही Batch 2026
+973          | 2026-02-05     | UP TGT Practice Recorded Batch
+972          | 2026-02-04     | BPSC (Prelims+Mains) Foundation Recorded Batch
+970          | 2026-02-03     | Bihar Daroga (SI) Mains Batch 2026
+969          | 2026-02-02     | MP SI Mains Recorded + Live Batch 2026
+968          | 2026-02-03     | UGC NET/JRF Home Science Foundation Batch June 2026
+967          | 2026-01-22     | BPSC AEDO Recorded Batch
+966          | 2026-01-27     | MP ITI TO COPA Batch 2026
+965          | 2026-02-10     | RRB Group D Revolution Batch 2026
+964          | 2026-01-22     | Bihar Civil Court Peon Batch 2026
+963          | 2026-01-13     | Personal Interview SSB
+962          | 2026-01-26     | MP Rakshak Batch 2026
+961          | 2026-01-13     | Yearly Current Affairs Batch 2025
+960          | 2026-01-15     | English Foundation Batch 2026
+959          | 2026-01-15     | Bihar Police Batch 2026
+957          | 2026-01-15     | Civil Engineering Practice Batch 2026
+955          | 2026-01-28     | UP Police Constable Target Batch 2026
+954          | 2026-01-09     | Bihar Daroga Tonic Batch 2026
+952          | 2026-01-22     | BPSC Foundation Batch 8 (Offline)
+951          | 2026-01-22     | BPSC Foundation Batch 8 (Online)
+950          | 2026-01-05     | 12th Board 2026 Physics 30 days महामंथन  Batch
+949          | 2026-03-10     | CUET 2026 Mission Batch (Science Domain)
+948          | 2026-02-28     | NEET 2026 60 Days Crash Course Hindi Medium Batch
+947          | 2026-01-08     | History Foundation by Balveer Sir
+946          | 2026-01-06     | Rajasthan CET (12th & Graduation Level) Batch 2026
+944          | 2026-01-07     | Geography optional (Hindi Medium)
+943          | 2026-01-08     | UP LEKHPAL Batch 2025-26
+942          | 2025-12-17     | 70th Interview Guidance Programme
+941          | 2026-01-27     | Class 12th Early Offline Yearlong Bilingual Batch - Prayagraj  JEE 2027
+940          | 2026-01-27     | Class 12th Early Offline Yearlong Bilingual Batch - Musallahpur Hat  JEE 2027
+939          | 2026-01-27     | Class 12th Early Offline Yearlong Bilingual Batch - Boring Road  JEE 2027
+938          | 2026-01-27     | Class 12th Early Offline Yearlong Bilingual Batch - Prayagraj  NEET 2027
+937          | 2026-01-27     | Class 12th Early Offline Yearlong Bilingual Batch - Musallahpur Hat  NEET 2027
+936          | 2026-01-27     | Class 12th Early Offline Yearlong Bilingual Batch - Boring Road  NEET 2027
+935          | 2026-04-06     | NDA Foundation Batch Offline Dehradun
+934          | 2025-12-15     | UPPCS Mains Mentorship 2025 (Offline)
+933          | 2025-12-15     | UPPCS Mains Mentorship 2025 (Online)
+931          | 2025-12-18     | Polity & International Relation (IR) By Khan Sir
+930          | 2026-01-20     | World Map 2026 By Khan Sir
+929          | 2026-01-12     | UPSC Crash Course 2026
+928          | 2026-01-02     | Bank Mahapack
+927          | 2025-12-10     | SSC GD Target Batch
+926          | 2025-12-11     | AGNIPATH TARGET BATCH 2026
+924          | 2025-12-09     | UPSC CSAT 2026 (Hindi Medium) Online
+923          | 2025-12-15     | UPSC CSAT 2026 (English Medium) Online
+922          | 2025-12-16     | Sociology Optional Hindi Medium
+921          | 2026-01-15     | UPSC (Pre + Mains) Foundation Batch 2027 (Hindi Medium)
+920          | 2025-12-22     | UPSC (Pre + Mains) Foundation Batch 2027 (English Medium)
+919          | 2025-12-09     | CSAT (UPSC + UPPCS) Prayagraj Classroom Programme 2026
+918          | 2026-01-05     | UPSC & UPPSC (Pre+Mains) Foundation Batch 2027 English Medium (Offline Prayagraj)
+917          | 2026-01-15     | UPSC & UPPSC (Pre+Mains) Foundation Batch 2027 Hindi Medium (Offline Prayagraj)
+916          | 2025-12-15     | UPSC CSAT 2026 English Medium (Karol Bagh)
+915          | 2025-12-22     | UPSC G.S (Prelims+Mains) Foundation Programme 2027 English Medium (Offline Class) Karol Bagh
+914          | 2026-01-15     | UPSC G.S (Prelims+Mains)फाउंडेशन प्रोग्राम 2027 हिंदी माध्यम (Offline Class) Mukherjee Nagar
+913          | 2025-11-28     | UPSC (3 Year) Foundation Batch-Hindi Medium (Prayagraj)
+912          | 2025-12-21     | UPSC Prelims Mentorship Programme 2026 (Offline) English Medium
+911          | 2025-12-21     | UPSC Prelims Mentorship Programme 2026 (Online) English Medium
+910          | 2025-12-21     | UPSC Prelims Mentorship Programme 2026 (Offline) Hindi Medium
+909          | 2025-12-21     | UPSC Prelims Mentorship Programme 2026 (Online) Hindi Medium
+908          | 2025-12-02     | UP Police Home Guard Batch
+907          | 2025-12-01     | KVS/NVS 2025 Tier 1 Target Batch
+906          | 2025-12-01     | KVS/NVS (Tier I + Tier II) TGT Batch 2025
+905          | 2025-12-01     | KVS/NVS (Tier I + Tier II) PRT Batch 2025
+902          | 2025-12-10     | UGC NET/JRF Paper-I June Batch 2026
+901          | 2025-12-10     | UGC NET/JRF Hindi Foundation Batch June 2026
+900          | 2025-12-10     | UGC NET/JRF Commerce Foundation Batch June 2026
+899          | 2025-12-10     | UGC NET/JRF History Foundation Batch June 2026
+898          | 2025-12-10     | UGC NET/JRF Political Science Foundation Batch June 2026
+897          | 2025-12-10     | UGC NET/JRF Economics Foundation Batch June 2026
+896          | 2025-12-10     | UGC NET/JRF Geography Foundation Batch June 2026
+895          | 2025-12-10     | UGC NET/JRF Sociology Foundation Batch June 2026
+894          | 2025-11-23     | 71st BPSC Mains Ranker 2.0 Batch
+892          | 2025-11-27     | History Optional Batch (English Medium)
+891          | 2025-11-13     | Reasoning Foundation 2.0 Batch by Manish Sir
+889          | 2025-11-11     | CTET Paper-II 2026 Target Batch
+888          | 2025-11-11     | CTET Paper- I 2026 Target Batch
+887          | 2025-11-11     | CTET Paper- I & Paper-II 2026 Target Batch
+886          | 2025-11-10     | SSC CGL TIER-II TARGET BATCH 2025-26
+885          | 2025-11-10     | RRB JE CBT- I Batch 2025-26
+884          | 2025-11-10     | RRB JE (CBT- I & II) Mechanical Engineering Batch 2025-26
+883          | 2025-11-10     | RRB JE (CBT- I & II) Civil Engineering Batch 2025-26
+882          | 2025-11-10     | RRB JE (CBT- I & II) Electrical Engineering Batch 2025-26
+880          | 2025-11-11     | RRB NTPC (CBT 01 & 02) Batch 2025
+879          | 2025-10-16     | Maths Optional Bilingual (Recorded)
+878          | 2025-11-03     | BTSC JE Electrical Engineering Batch 2025-26
+877          | 2025-11-03     | BTSC JE Civil Engineering Batch 2025-26
+876          | 2025-11-18     | GS SPECIAL VISION 2.0 Foundation Batch 2025-26
+875          | 2025-10-28     | UP SI Practice Batch 2025
+874          | 2025-10-23     | MP SI Prelims Practice Batch 2025
+872          | 2025-11-17     | NCERT Foundation English Medium
+871          | 2025-11-17     | NCERT Foundation Hindi Medium
+870          | 2025-10-23     | UP-PSC (Pre+ Mains) Foundation Batch 2026 English Medium
+869          | 2025-11-10     | UP-PSC (Pre+ Mains) Foundation Batch 2026 Hindi Medium
+868          | 2025-11-05     | Bihar SSC (PT + Mains) Inter Level Batch 2025
+867          | 2025-11-20     | 14th JPSC (Prelims + Mains) Foundation Batch 2026
+866          | 2025-10-28     | ITI Foundation Batch 2025-26
+865          | 2025-11-03     | NDA (1 Year) Foundation Batch (Online)
+864          | 2025-11-03     | Defence English (1 Year) Foundation Batch
+863          | 2025-11-03     | NDA Maths (1 Year) Foundation Batch
+862          | 2025-11-03     | NDA Science (1 Year) Foundation Batch
+861          | 2025-10-07     | DDA JE (Electrical/Mechanical Engineering) Batch 2025-26 (RECORDED)
+860          | 2025-10-07     | DDA JE Civil Engineering Batch 2025-26 (RECORDED)
+859          | 2025-10-07     | DDA JE Mechanical Engineering Batch 2025-26 (RECORDED)
+858          | 2025-10-28     | SSC CGL Tier-I & II Foundation Batch 2026
+857          | 2025-10-28     | UGC NET/JRF December 2025 Practice Batch
+856          | 2025-10-09     | Bihar Daroga Practice Batch
+855          | 2025-10-13     | UPTET (Paper 1 & Paper 2 ) Batch 2025
+854          | 2025-10-13     | UPTET (Paper- 2) Batch 2025
+853          | 2025-10-13     | UPTET (Paper- I) Batch 2025
+851          | 2025-10-15     | Bihar Police Batch 2025
+850          | 2025-10-15     | Jharkhand Exams Foundation Batch (One Day) 2025-26
+849          | 2025-11-13     | 72nd BPSC FOUNDATION BATCH V (Bilingual)
+848          | 2025-11-13     | 72nd BPSC Foundation Batch 5 - Bilingual (Boring Road)
+847          | 2025-11-20     | NEET 2026 Offline Crash Course Bilingual Batch - Prayagraj
+846          | 2025-11-20     | NEET 2026 Offline Crash Course Bilingual Batch - Boring Road
+845          | 2025-11-20     | NEET 2026 Offline Crash Course Bilingual Batch - Musallahpur Hat
+844          | 2025-11-15     | UPSC (3 Year) Foundation Batch-Hindi Medium
+843          | 2025-10-06     | IB ACIO Tier-II Target Batch-2025
+841          | 2025-09-15     | Sociology Optional English Medium (Karol Bagh)
+840          | 2025-09-18     | 71st BPSC Mains Batch (Bilingual)
+839          | 2025-09-18     | 71st BPSC Mains Batch (Hindi Medium)
+838          | 2025-11-13     | 72nd BPSC Foundation Batch VII (Musallahpur Offline)
+837          | 2025-09-22     | MP Police Constable + ASI Batch 2025
+836          | 2025-11-13     | 72nd BPSC Foundation Batch VII (Online)
+835          | 2025-09-16     | RRB GROUP D रफ्तार BATCH 2025
+824          | 2025-10-09     | Bihar Daroga Crash Course
+823          | 2025-10-06     | Maths Optional Bilingual
+822          | 2025-09-15     | PSIR (राजनीति विज्ञान और अंतर्राष्ट्रीय संबंध) Hindi Medium
+816          | 2025-09-02     | UP SI (Moolvidhi + Polity) Batch Recorded
+815          | 2025-09-05     | GK/GS DAILY TEST WITH DISCUSSION
+814          | 2025-09-10     | RRB पंचायत 2.0 ग्रामीण बैंक PO & CLERK TARGET BATCH 2025-26
+813          | 2025-09-08     | Hindi Literature Optional
+812          | 2025-09-15     | History Optional English Medium
+811          | 2025-09-15     | Public Administration Optional English Medium
+810          | 2025-09-23     | Sociology Optional Hindi Medium
+809          | 2025-09-15     | Sociology Optional English Medium
+808          | 2025-09-08     | UPSC (Pre + Mains) Foundation Batch 2026 (English Medium)
+807          | 2025-09-08     | UPSC (Pre + Mains) Foundation Batch 2026 Hindi Medium
+806          | 2025-09-08     | UPSC G.S (Prelims+Mains) Foundation Programme 2026 English Medium (Offline Class) Karol Bagh
+805          | 2025-08-26     | Maths Foundation By Ashu Nayak Sir
+804          | 2025-08-15     | SSB Interview
+803          | 2025-08-01     | SSB Interview
+802          | 2025-09-08     | UPSC & UPPSC (Pre+Mains) Foundation Batch 2026 English Medium (Offline Prayagraj)
+801          | 2025-10-04     | UPSC & UPPSC (Pre+Mains) Foundation Batch 2026 Hindi Medium (Offline Prayagraj)
+800          | 2025-09-09     | BPSC AEDO BATCH 2025
+799          | 2025-08-28     | LIC AAO (Pre + Mains) TARGET BATCH 2025
+798          | 2025-09-11     | Indian Map 2025 By Khan Sir
+797          | 2025-08-25     | UP SI Batch 2025
+796          | 2025-09-22     | CDS 2 2026 Target Batch  (Dehradun Offline)
+795          | 2025-09-22     | CDS 1 2026 Target Batch (Dehradun Offline)
+794          | 2025-09-22     | NDA 2 2026 Target Batch  (Dehradun Offline)
+793          | 2025-09-22     | NDA 1 2026 Target Batch (Dehradun Offline)
+792          | 2025-09-01     | RAS Pre + PSI Officer Batch 2025
+791          | 2025-08-19     | GS Crash Course By Khan Sir & Team
+790          | 2025-08-18     | UPSC EPFO 2025 APFC & EO/AO
+789          | 2025-09-22     | CDS OTA 01 2026 Pratishta Batch
+788          | 2025-09-22     | CDS 01 2026 Prakhar Batch
+787          | 2025-09-22     | NDA 01 2026 Yodha Batch
+786          | 2025-08-20     | MPPSC Food Safety Batch 2025
+785          | 2025-08-18     | SBI CLERK (Pre + Mains) Target batch 2025
+784          | 2025-08-19     | Bihar SSC CGL 4 (PT + Mains) Batch 2025
+783          | 2025-08-26     | Bihar SSC कार्यालय परिचारी Batch 2025
+782          | 2025-08-12     | UP LT Grade Biology Batch 2025
+781          | 2025-08-12     | UP LT Grade Home Science Batch 2025
+780          | 2025-08-21     | Biology Foundation 2025 Batch By Amrita Ma'am
+779          | 2025-08-04     | GK/GS DAILY TEST WITH DISCUSSION
+778          | 2025-07-31     | UPPCS Paper 5 & 6 Module Recorded Batch
+777          | 2025-08-12     | UP LT Grade Commerce Batch 2025
+776          | 2025-08-12     | UP LT Grade Social Studies Batch 2025
+775          | 2025-08-12     | UP LT Grade Maths Batch 2025
+774          | 2025-08-12     | UP LT Grade Science (Chemistry+Physics) Batch 2025
+773          | 2025-08-12     | UP LT Grade English Batch 2025
+772          | 2025-08-12     | UP LT Grade Hindi Batch 2025
+771          | 2025-08-04     | UPPCS Prelims Mentorship Programme 2025
+770          | 2025-08-04     | INTELLIGENCE BUREAU SECURITY ASSISTANT/EXECUTIVE SPY SQUAD Target Batch-2025 (Bilingual)
+769          | 2025-07-25     | Half Yearly Current Affairs PDF Batch (For SSC & State Exams)
+768          | 2025-08-26     | Classroom off-Line BPSC Batch- IV 2025 (Branch- Boring Road)
+767          | 2025-08-26     | Foundation BPSC on-line (P.T + Mains+Interview) Batch-IV - Bilingual
+766          | 2025-07-25     | Triveni Batch For MPPSC
+765          | 2025-09-08     | UP-PSC (Pre+ Mains) Foundation Batch 2026 English Medium
+764          | 2025-07-31     | Bihar Police Driver Batch 2025
+763          | 2025-07-29     | IB ACIO (Tier-I & II) Target Batch -2025
+762          | 2025-09-09     | CUET 2026 Vision Batch (Science Domain)
+761          | 2025-07-29     | RRB Technician Grade 1 & Grade 3 Batch 2025
+760          | 2025-07-16     | SSB Interview
+759          | 2025-07-28     | BPSC Current Affairs Adhyan Batch By S.K Choudhary Sir
+758          | 2025-08-20     | CAPF AC 2026  Foundation Batch
+757          | 2025-08-20     | CAPF + CDS 2026 Foundation Batch (Dehradun Offline)
+756          | 2025-08-05     | UP-PSC (Prelims +Mains) Foundation Batch 2026
+755          | 2025-07-21     | MPTET VARG 3 चयन परीक्षा Practice Batch
+754          | 2025-08-04     | Mind Calculation Batch – 2025
+753          | 2025-07-15     | Civil Engineering Geotechnical Masterclass Batch by Amanpreet Sir
+752          | 2025-07-01     | SSB Interview
+751          | 2025-07-14     | UPSC G.S (Prelims+Mains) Foundation Programme 2026 English Medium (Offline Class) Karol Bagh
+750          | 2025-09-08     | UPSC G.S (Prelims+Mains)फाउंडेशन प्रोग्राम 2026 हिंदी माध्यम (Offline Class) Mukherjee Nagar
+749          | 2025-07-07     | CSAT (UPSC + UPPCS) Prayagraj Classroom Programme
+748          | 2025-07-15     | MPPSC Prelims Target Batch 2026
+747          | 2025-07-15     | MPPSC (Prelims + Mains) Foundation Batch 2026
+746          | 2025-07-08     | UGC NET/JRF Sociology Foundation Batch December 2025
+745          | 2025-07-07     | SSC CHSL Tier-1 Practice Batch 2025
+744          | 2025-06-16     | PSIR (राजनीति विज्ञान और अंतर्राष्ट्रीय संबंध) Hindi Medium (Mukherjee Nagar)
+743          | 2025-06-23     | History Optional English Medium (Karol Bagh)
+742          | 2025-06-10     | Hindi Literature Optional (Mukherjee Nagar)
+741          | 2025-07-17     | History Optional Hindi Medium (Mukherjee Nagar)
+740          | 2025-06-10     | Sociology Optional English Medium (Karol Bagh)
+739          | 2025-06-25     | GK/GS DAILY TEST WITH DISCUSSION
+738          | 2025-07-24     | Repeater Batch Yearlong Prayagraj Offline Bilingual Batch NEET 2026
+737          | 2025-06-16     | SSB Interview
+736          | 2025-06-24     | UPPSC CSAT Batch 2025
+735          | 2025-07-01     | UGC NET/JRF Economics Foundation Batch December 2025
+734          | 2025-06-25     | IBPS PO/CLERK (Pre + Mains) Target batch 2025
+733          | 2025-07-10     | Hindi Foundation Batch 2025
+732          | 2025-06-16     | BSPHCL Technician Grade III Question Practice Batch (Bilingual)
+731          | 2025-07-01     | Class 11th Yearlong Bilingual Batch-II Mussalahpur Hat JEE 2027
+730          | 2025-07-01     | Class 11th Yearlong Bilingual Batch-II Boring Road JEE 2027
+729          | 2025-07-01     | Class 11th Yearlong Bilingual Batch-II Mussalahpur Hat NEET 2027
+728          | 2025-07-01     | Class 11th Yearlong Bilingual Batch-II Boring Road NEET 2027
+727          | 2025-07-24     | Repeater Batch Yearlong Boring Road (Patna) Offline Bilingual Batch NEET 2026
+726          | 2025-07-24     | Repeater Batch Yearlong Mussalahpur Hat (Patna) Offline Bilingual Batch NEET 2026
+725          | 2025-09-02     | UPSC & UPPSC (Pre+Mains) Foundation Batch 2026 English Medium (Offline Prayagraj)
+724          | 2025-07-15     | UPSC & UPPSC (Pre+Mains) Foundation Batch 2026 Hindi Medium (Offline Prayagraj)
+723          | 2025-07-01     | UGC NET/JRF Geography Foundation Batch December 2025
+722          | 2025-07-01     | UGC NET/JRF History Foundation Batch December 2025
+721          | 2025-07-01     | UGC NET/JRF Commerce Foundation Batch December 2025
+720          | 2025-07-01     | UGC NET/JRF Hindi Foundation Batch December 2025
+719          | 2025-07-01     | UGC NET/JRF Political Science Foundation Batch December 2025
+718          | 2025-07-01     | UGC NET/JRF Paper-I December Batch 2025
+717          | 2025-06-20     | BSTET Paper 1 2025 Target Batch
+716          | 2025-07-01     | Math Foundation Batch By Amit Sir
+714          | 2025-06-12     | Basic Science & Engineering Drawing Batch
+713          | 2025-06-12     | Diesel Mechanic Trade batch (RRB ALP)
+712          | 2025-06-12     | Electrician Trade Batch (RRB ALP)
+711          | 2025-06-12     | Fitter Trade Batch (RRB ALP)
+710          | 2025-06-17     | Computer Foundation Batch 2.0
+709          | 2025-07-17     | 72nd BPSC Foundation Batch VI (Online)
+708          | 2025-07-17     | 72nd BPSC Foundation Batch VI (Musallahpur Offline)
+707          | 2025-06-17     | विजेता 2.0 बैच – 71वीं बीपीएससी प्रारंभिक परीक्षा
+706          | 2025-06-16     | DELHI POLICE प्रहरी Batch-2025
+705          | 2025-06-26     | Geography Optional English Medium (Live + Recorded Batch)
+704          | 2025-08-12     | Geography Optional Hindi Medium
+703          | 2025-06-26     | Geography Optional Hindi Medium (Recorded Batch)
+702          | 2025-06-03     | NEETFLIX- Recorded Batch For NEET Preparation (Hindi Medium)
+701          | 2025-06-03     | NEETFLIX- Recorded Batch For NEET Preparation (English Medium)
+700          | 2025-07-17     | History Optional Hindi Medium
+698          | 2025-06-18     | Maths Optional Bilingual
+697          | 2025-06-10     | Hindi Literature Optional
+696          | 2025-06-16     | PSIR (राजनीति विज्ञान और अंतर्राष्ट्रीय संबंध) Hindi Medium
+695          | 2025-06-23     | History Optional English Medium
+694          | 2025-06-16     | Public Administration Optional English Medium
+693          | 2025-06-10     | Sociology Optional English Medium
+692          | 2025-05-22     | Foundation (Recorded Batch) by Khan Sir
+691          | 2025-06-09     | UPSC Adhyan Current Affairs (Hindi Medium) Batch 2026
+690          | 2025-06-09     | UPSC Adhyan Current Affairs (English Medium) Batch 2026
+689          | 2025-06-03     | Indian Coast Guard || Agniveer Vayu || Navy SSR || MR Batch
+688          | 2025-06-10     | SSC GD Foundation Batch 2025-26
+687          | 2025-05-16     | RRB NTPC 2025 – INJECTION Batch By PK Sir
+686          | 2025-06-02     | UPSC Mains Answer Writing Program 2025
+685          | 2025-07-08     | Class 10th Students NEET JEE Foundation Offline Batch at Prayagraj
+684          | 2025-07-08     | Class 10th Students NEET JEE Foundation Offline Batch at Boring Road Patna
+683          | 2025-05-15     | Economics Foundation By Khan Sir  (Recorded)
+682          | 2025-05-15     | Biology Foundation By Khan Sir (Recorded)
+681          | 2025-05-15     | History Foundation By Khan Sir (Recorded)
+680          | 2025-05-15     | Chemistry Foundation By Khan Sir (Recorded)
+679          | 2025-05-15     | Physics Foundation By Khan Sir (Recorded)
+678          | 2025-05-15     | Indian Map by Khan Sir (Recorded)
+677          | 2025-05-15     | Polity Foundation by Khan Sir (Recorded)
+676          | 2025-05-15     | Geography Foundation By Khan Sir (Recorded)
+675          | 2025-05-15     | BPSC TRE 4.0 Class (1 to 5) Recorded
+674          | 2025-05-15     | BPSC TRE 4.0 Class (6 to 8 & 9 to 10) Recorded
+672          | 2025-06-02     | DI Special Batch 2025
+671          | 2025-06-10     | error
+670          | 2025-06-16     | UPSC G.S (Prelims+Mains)फाउंडेशन प्रोग्राम 2026 हिंदी माध्यम (Offline Class) Mukherjee Nagar
+669          | 2025-06-09     | UPSC Essay and Ethics Module 2025 by Dharmendra Sir (Hindi Medium)
+668          | 2025-06-09     | UPSC Essay and Ethics Module 2025 (English Medium)
+667          | 2025-06-16     | UPSC (Pre + Mains) Foundation Batch 2026 Hindi Medium
+666          | 2025-06-10     | UPSC (Pre + Mains) Foundation Batch 2026 (English Medium)
+663          | 2025-05-13     | NEET 2026 Physics By Mohit Agarwal Sir (Hindi Medium)
+662          | 2025-05-13     | NEET 2026 Physics By Mohit Agarwal Sir (English Medium)
+661          | 2025-06-02     | Puzzle Special Batch (For All Banking & Insurance Exam)
+660          | 2025-05-12     | KVS उन्नति Foundation Batch 2025 (For TGT)
+658          | 2025-05-09     | NDA offline Musallahpur
+657          | 2025-05-15     | UPSSSC PET Batch 2025
+656          | 2025-06-17     | Class 12th Pass/Dropper Students Offline Yearlong Bilingual Batch - II Prayagraj  NEET 2026
+655          | 2025-05-12     | Class 12th Pass/Dropper Students Offline Yearlong Bilingual Batch - II Mussalahpur Hat  NEET 2026
+654          | 2025-05-12     | Class 12th Pass/Dropper Students Offline Yearlong Bilingual Batch - II  Boring Road  NEET 2026
+653          | 2025-07-17     | Class 12th/12th Pass Offline Yearlong Bilingual Batch Guwahati NEET 2026
+652          | 2025-07-17     | Class 11th Offline Yearlong Bilingual Batch Guwahati NEET 2027
+651          | 2025-04-16     | SSB Interview Program
+650          | 2025-04-24     | JEE ADVANCED 2025
+649          | 2025-04-22     | BSSC Field Assistant Batch 2025
+648          | 2025-05-01     | SSC JE Electrical Engineering Batch 2025-26
+647          | 2025-05-01     | SSC JE Mechanical Engineering Batch 2025-26
+646          | 2025-05-01     | SSC JE Civil Engineering Batch 2025-26
+645          | 2025-05-01     | Rajasthan Police Constable Batch 2025
+644          | 2025-04-22     | GK/GS DAILY TEST WITH DISCUSSION
+643          | 2025-04-24     | RRB ALP Batch 2025
+642          | 2025-05-12     | KVS उन्नति Foundation Batch 2025 (TGT Social Studies)
+641          | 2025-05-12     | error
+640          | 2025-05-12     | KVS उन्नति Foundation Batch 2025 (TGT Science)
+639          | 2025-05-12     | error
+638          | 2025-05-12     | KVS उन्नति Foundation Batch 2025 (TGT English)
+637          | 2025-05-12     | KVS उन्नति Foundation Batch 2025 (TGT Hindi)
+636          | 2025-05-12     | KVS उन्नति Foundation Batch 2025 ( PRT)
+635          | 2025-05-01     | Rajasthan Special GK Batch
+634          | 2025-05-01     | Rajasthan 4th Grade 2025
+633          | 2025-04-28     | RRB पंचायत 1.0 RRB PO/CLERK 2025
+632          | 2025-05-01     | MPPSC Mains Answer Writing Program 2025
+631          | 2025-04-15     | Navy SSR VOD + Live Practice Batch
+630          | 2025-04-10     | MP व्यापम महापैक Batch 2025
+629          | 2025-05-01     | SSC Reasoning Foundation Batch 2025-26
+628          | 2025-05-01     | SSC English Foundation Batch 2025-26
+627          | 2025-05-01     | SSC Maths Foundation Batch 2025-26
+626          | 2025-05-01     | SSC Mahapack 2.0 Batch 2025-26 (Bilingual)
+625          | 2025-04-21     | AE Foundation Civil Engineering Batch 2025
+624          | 2025-04-28     | UPSC & UPPSC (Pre+Mains) Foundation Batch 2026 Hindi Medium (Offline Prayagraj)
+623          | 2025-05-15     | UPSC Foundation Offline Batch - 2026 (Musallahpur)
+622          | 2025-05-20     | UPSC Foundation Offline Batch - 2026 (Boring Road)
+621          | 2025-04-10     | SSC CGL Tier-1 Practice Batch 2025
+620          | 2025-04-10     | UP SI (Moolvidhi + Polity) Batch 2025
+619          | 2025-04-10     | UP SI Batch 2025
+618          | 2025-03-20     | SSB Interview Program
+617          | 2025-04-15     | Pocket GK Batch 2025
+616          | 2025-04-15     | CDS 02 2025 Target Batch
+615          | 2025-04-15     | NDA 02 2025 Target Batch
+614          | 2025-05-06     | Foundation BPSC on-line (P.T + Mains+Interview) Batch-V  Hindi Medium
+613          | 2025-05-02     | Classroom Off-line BPSC (Pre + Mains + Interview) Foundation Batch - V (Musallahpur)
+612          | 2025-07-15     | Biology Foundation by Khan Sir
+611          | 2025-04-10     | Chemistry Foundation by Khan Sir
+610          | 2025-07-10     | Economics Foundation by Khan Sir
+609          | 2025-03-24     | UPPSC RO/ARO (Pre+Mains) Re-Exam Foundation Batch Recorded)
+608          | 2025-04-01     | UPPCS RO/ARO Re-Exam Revision Batch 2025
+607          | 2025-04-02     | BSO/SSO & BSSC CGL 4 (PT +Mains) Batch-2025
+606          | 2025-03-24     | UPPCS Mains Mentorship Program 2025 Online
+605          | 2025-04-01     | MPPSC (Prelims + Mains) Foundation Batch 2026
+604          | 2025-03-24     | UPPCS Mains Mentorship Program 2025 Prayagraj Offline
+603          | 2025-03-24     | UPPCS  Paper 5 & 6 Module Batch 2025
+602          | 2025-04-01     | UPPSC (Prelims +Mains) Foundation Batch 2025-26
+601          | 2025-04-01     | UPSC (Pre + Mains) Foundation Batch 2026 Hindi Medium
+600          | 2025-04-01     | UPSC (Pre + Mains) Foundation Batch 2026 (English Medium)
+599          | 2025-04-01     | NCERT Foundation English Medium
+598          | 2025-04-01     | NCERT Foundation Batch (Hindi Medium)
+597          | 2025-05-12     | Class 12th/ 12th Pass MISSION BATCH NEET 2026 Hindi
+596          | 2025-05-12     | Class 12th/ 12th Pass MISSION BATCH NEET 2026 ENGLISH
+595          | 2025-04-21     | Class 12th/ 12th Pass MISSION BATCH JEE 2026 BILINGUAL
+594          | 2025-05-01     | Class 11th VISION BATCH NEET 2027 Hindi
+593          | 2025-05-01     | Class 11th VISION BATCH NEET 2027 English
+592          | 2025-04-21     | Class 11th VISION BATCH JEE 2027 BILINGUAL
+591          | 2025-03-20     | Bihar Police Batch 2025
+590          | 2025-03-25     | UP Police Foundation Batch 2025
+588          | 2025-03-24     | UPSC CSAT Practice Batch 2025
+587          | 2025-03-06     | SSC CPO-SI Foundation Batch ( Recorded )
+586          | 2025-03-20     | CAPF AC Paper II Batch 2025
+585          | 2025-04-15     | NDA 01-2027 Foundation Batch Offline Dehradun
+584          | 2025-04-15     | NDA 01-2026 Target Batch Offline Dehradun
+583          | 2025-04-15     | CDS 01-2026 Target Batch Offline Dehradun
+582          | 2025-04-15     | CDS 02-2025 Target Batch Offline Dehradun
+581          | 2025-04-15     | NDA 02-2025 Target Batch Offline Dehradun
+580          | 2025-02-16     | SSB Interview Program
+579          | 2025-02-25     | Reasoning Foundation Batch 2025 by Manish Sir
+578          | 2025-02-24     | JEE 2025 Unnati Batch for Ranker Students
+577          | 2025-04-03     | Class 11th to 12th Moving Offline Yearlong Bilingual Batch - II Mussalahpur Hat  JEE 2026
+576          | 2025-04-03     | Class 11th to 12th Moving Offline Yearlong Bilingual Batch-II Musallahpur Hat NEET 2026
+575          | 2025-04-03     | Class 11th to 12th Moving Offline Yearlong Bilingual Batch-II Boring Road  JEE 2026
+574          | 2025-04-03     | Class 11th to 12th Moving Offline Yearlong Bilingual Batch-II Boring Road NEET 2026
+573          | 2025-03-25     | CUET 2025 Mission Batch (Science Domain)
+572          | 2025-03-17     | Maths Foundation 2025 By Gaurav Sir
+571          | 2025-03-25     | Foundation BPSC on-line (P.T + Mains+Interview) Batch-III - Bilingual
+570          | 2025-03-25     | Classroom off-Line BPSC Batch- III 2025 (Branch- Boring Road)
+569          | 2025-02-20     | 71st BPSC on-line (P.T + Mains+Interview) Batch- IV - Hindi
+568          | 2025-02-13     | BPSC Mains Rankers Batch (English)
+567          | 2025-03-05     | SSC MTS / हवलदार  प्रतिज्ञा बैच - 2025
+566          | 2025-02-10     | 70th BPSC Mains Exam Mentorship Programme 2025 (Karol Bagh)
+563          | 2025-04-10     | World Map 2025 by Khan Sir
+562          | 2025-03-25     | History Foundation by Khan Sir
+561          | 2025-02-18     | Railway TGT and PGT Teacher Recruitment 2025
+560          | 2025-02-18     | Railway PRT Teacher Recruitment 2025
+559          | 2025-02-20     | Tejas English Practice Batch 3.0
+558          | 2025-02-05     | SSB Interview Program
+557          | 2025-02-06     | BPSC Mains Rankers Batch (Hindi)
+556          | 2025-02-12     | 70वीं BPSC मुख्य परीक्षा निबंध बैच
+555          | 2025-02-24     | MP SI (Pre+ Mains) Foundation Batch
+554          | 2025-02-04     | Economics Foundation (Recorded)
+553          | 2025-02-04     | Calculation Booster Batch By Neeraj Sir (Recorded)
+552          | 2025-02-11     | UPSC CSAT 2025 English Medium (Karol Bagh)
+551          | 2025-02-11     | UPSC CSAT 2025 English Medium (Online)
+550          | 2025-02-10     | CDS-01 2025 Practice Batch
+549          | 2025-02-10     | NDA-01 2025 Practice Batch
+548          | 2025-10-16     | SSB Interview
+547          | 2025-02-05     | Bank + Insurance Exam Foundation Batch
+546          | 2025-02-13     | Sociology Optional English Medium
+545          | 2025-01-28     | NCERT Foundation English Medium
+544          | 2025-04-21     | Class 12th to 13th Moving Offline Yearlong Bilingual Batch - Musallahpur Hat  JEE 2026
+543          | 2025-04-21     | Class 12th to 13th Moving Offline Yearlong Bilingual Batch - Musallahpur Hat  NEET 2026
+542          | 2025-04-21     | Class 12th to 13th Moving Offline Yearlong Bilingual Batch - Boring Road  JEE 2026
+541          | 2025-04-21     | Class 12th to 13th Moving Offline Yearlong Bilingual Batch - Boring Road  NEET 2026
+540          | 2025-04-24     | Class 12th to 13th Moving Offline Yearlong Bilingual Batch - Prayagraj JEE 2026
+539          | 2025-04-21     | Class 12th to 13th Moving Offline Yearlong Bilingual Batch - Prayagraj NEET 2026
+538          | 2025-04-21     | Class 10th to 11th Moving Yearlong Bilingual Batch - Musallahpur Hat JEE 2027
+537          | 2025-04-21     | Class 10th to 11th Moving Offline Yearlong Bilingual Batch-Musallahpur Hat  NEET 2027
+536          | 2025-04-21     | Class 10th to 11th Moving Offline Yearlong Bilingual Batch - Boring Road  JEE 2027
+535          | 2025-04-21     | Class 10th to 11th Moving Offline Yearlong Bilingual Batch - Boring Road  NEET 2027
+534          | 2025-04-24     | Class 10th to 11th Moving Offline Yearlong Bilingual Batch - Prayagraj JEE 2027
+533          | 2025-04-21     | Class 10th to 11th Moving Offline Yearlong Bilingual Batch - Prayagraj NEET 2027
+532          | 2025-01-27     | RRB Group D Batch-2025
+531          | 2025-02-04     | UPPSC AE (Electrical, Mechanical & Agriculture Engineering)2024-25 Prelims Batch
+530          | 2025-02-04     | UPPSC AE Civil Engineering (Pre + Mains) Foundation Batch 2024-25
+529          | 2025-02-20     | Classroom off-Line 71st BPSC (Musallahpur)-IV
+527          | 2025-01-17     | Bihar SSC (10+2) Level Recorded Batch
+525          | 2025-03-20     | RAS (Prelims + Mains) Foundation Batch 2025
+524          | 2025-01-23     | MP Assistant Grade-III
+522          | 2025-02-03     | Reasoning Special All Banking Exams (Bilingual)
+521          | 2025-01-20     | UPSC Prelims (GS + CSAT) 2025 Crash Course
+520          | 2025-01-28     | UPSC (Pre+Mains) Foundation Batch 2026 (Hindi Medium)
+519          | 2025-01-28     | UPSC (Pre+Mains) Foundation Batch 2026 (English Medium)
+518          | 2025-01-21     | CTET 2025 Paper 1 Foundation Batch 2.0
+517          | 2025-01-21     | CTET 2025 (Paper I & II) Foundation Batch 2.0
+516          | 2025-01-20     | UPSC & UPPSC  (निबंध + नीतिशास्त्र)  Paper-IV
+515          | 2025-01-20     | Current Affairs (UPSC & State PSC) Batch 2025 (English Medium)
+514          | 2025-01-20     | Current Affairs (UPSC & State PSC) Batch 2025 (Hindi Medium)
+513          | 2025-02-18     | UPSC & UPPSC (Pre+Mains) Foundation Batch 2026 (Offline Prayagraj)
+512          | 2025-02-20     | UPSC & UPPSC (Pre+Mains) Foundation Batch 2026 English Medium (Offline Prayagraj)
+511          | 2025-01-20     | History Optional Hindi Medium
+510          | 2025-02-06     | Public Administration Optional English Medium
+509          | 2025-01-28     | Hindi Literature Optional
+508          | 2025-01-28     | Maths Optional Bilingual
+507          | 2025-01-21     | UGC NET/JRF Hindi सृजन Foundation June 2025 बैच
+506          | 2025-01-21     | UGC NET/JRF Commerce सृजन Foundation June 2025 Batch
+505          | 2025-01-21     | UGC NET/JRF History सृजन Foundation June 2025 Batch
+504          | 2025-01-21     | UGC NET/JRF Political Science सृजन Foundation June 2025 Batch
+503          | 2025-01-21     | UGC NET/JRF Geography सृजन Foundation June 2025 Batch
+502          | 2025-01-21     | UGC NET/JRF Paper -1 सृजन Foundation Batch June 2025
+501          | 2025-01-28     | UPSC G.S (Prelims+Mains) Foundation Programme 2026 English Medium (Offline Class) Karol Bagh
+500          | 2025-02-03     | UPSC G.S (Prelims+Mains)फाउंडेशन प्रोग्राम 2026 हिंदी माध्यम (Offline Class) Mukherjee Nagar
+499          | 2025-01-16     | SSB Interview Program
+498          | 2025-07-01     | SBI PO (Pre + Mains) 2025 Recorded Batch
+497          | 2025-01-29     | GS Special Vision Foundation Batch-2025
+496          | 2025-01-15     | Rajasthan Patwar | VDO | Jail Prahari Target Batch
+493          | 2025-01-06     | UPPSC (Prelims+Mains) Foundation Batch 2025-26
+492          | 2025-01-13     | MPPSC (Prelims + Mains) Foundation Batch 2026
+491          | 2025-01-06     | MP महिला सुपरवाइजर Target Batch
+490          | 2025-01-02     | Teaching Foundation Batch 2025
+489          | 2024-12-26     | Air Force Agniveer Target Batch 2025
+488          | 2025-01-02     | SSB Interview Program
+487          | 2024-12-23     | SBI Clerk (Pre+Mains) Target Batch 2025
+486          | 2024-12-19     | 70th BPSC Mains (GS I + GS II + Essay + Hindi) Bilingual
+485          | 2024-12-17     | 70th BPSC Mains (GS I + GS II + Essay + Hindi) Hindi Medium
+483          | 2024-12-16     | SSB Interview Program
+481          | 2024-12-19     | Classroom off-Line 71st BPSC (Musallahpur)-III
+480          | 2024-12-19     | 71st BPSC on-line (P.T + Mains+Interview) Batch-III
+479          | 2024-12-01     | SSB Interview Program
+478          | 2025-02-03     | Class 11th to 12th Moving Offline Yearlong Bilingual Batch - Musallahpur Hat JEE 2026
+477          | 2025-02-03     | Class 11th to 12th Moving Offline Yearlong Bilingual Batch-Musallahpur Hat NEET 2026
+476          | 2024-12-16     | SSC CGL TIER-I & II Foundation Batch-2025
+475          | 2024-11-24     | UP PGT 2024 रफ़्तार Practice Batch
+474          | 2024-11-26     | UP TGT 2024 रफ़्तार Practice Batch
+473          | 2025-02-03     | Class 11th to 12th Moving Offline Yearlong Bilingual Batch - Boring Road  JEE 2026
+472          | 2025-02-03     | Class 11th to 12th Moving Offline Yearlong Bilingual Batch - Boring Road NEET 2026
+471          | 2025-01-27     | NEET 2025 Offline Crash Course Bilingual Batch - Boring Road
+470          | 2024-11-18     | UPSC Free Answer Writing Batch
+469          | 2024-11-26     | English Foundation Batch - 05 By Priyanshu Sir
+468          | 2025-04-24     | Class 11th to 12th Moving Offline Yearlong Bilingual Batch - Prayagraj   JEE 2026
+467          | 2025-04-21     | Class 11th to 12th Moving Offline Yearlong Bilingual Batch-Prayagraj NEET 2026
+466          | 2025-01-07     | NEET 2025 Offline Crash Course Bilingual Batch - Prayagraj
+465          | 2024-11-18     | Biology Foundation (Recorded)
+464          | 2024-11-18     | World Map (Recorded)
+463          | 2024-11-18     | History Foundation (Recorded)
+462          | 2024-11-18     | Mission NET/JRF Paper- 1 Crash Course
+461          | 2024-11-16     | SSB Interview Program
+460          | 2024-12-23     | UPSC G.S (Prelims+Mains) Foundation Programme 2026 English Medium (Offline Class) Karol Bagh
+459          | 2024-11-11     | MPPSC Prelims Target Batch 2025
+458          | 2024-11-12     | UPSC CSAT 2025 Hindi Medium (Online)
+457          | 2024-11-18     | UPSC CSAT 2025 English Medium (Online)
+454          | 2024-12-09     | UPSC & UPPSC (Pre+Mains) Foundation Batch 2025 (Offline Prayagraj)
+453          | 2024-11-12     | History Optional Hindi Medium
+452          | 2024-11-12     | Sociology Optional English Medium
+451          | 2024-11-03     | SSB Interview Program
+450          | 2024-11-14     | Computer Foundation by Abhishek Sachan Sir
+448          | 2024-11-11     | Reasoning Special by Yogendra Sir
+446          | 2024-10-14     | RRB ALP CBT 1 & Technician 2024 Revision & Practice Batch
+445          | 2024-10-15     | UPPSC RO/ARO-2024 Crash Course
+444          | 2024-10-16     | SSB Interview Program
+443          | 2024-10-14     | SSC CGL Tier-2 Practice Batch
+442          | 2024-10-08     | NCERT Foundation Batch (English Medium)
+441          | 2024-10-08     | NCERT Foundation Batch (Hindi Medium)
+440          | 2024-10-07     | RRB JE CBT-II (Electrical) Batch 2.0
+439          | 2024-10-07     | RRB JE CBT-II (Mechanical) Batch 2.0
+438          | 2024-10-07     | RRB JE CBT-II (Civil) Batch 2.0
+437          | 2024-10-07     | SSC CHSL 2.0 Tier 1 & 2 Foundation Batch 2024-25
+436          | 2024-09-16     | Class 10th Board Hindi Medium Prarambh Batch
+435          | 2024-09-16     | Class 10th Board English Medium Prarambh Batch
+434          | 2024-09-23     | Mission NET/JRF Hindi Crash Course
+433          | 2024-09-23     | Mission NET/JRF Political Science Crash Course
+432          | 2024-09-23     | Mission NET/JRF Geography Crash Course
+431          | 2024-09-23     | Mission NET/JRF Commerce Crash Course
+430          | 2024-09-23     | Mission NET/JRF History Crash Course
+429          | 2024-09-17     | 70th BPSC Prelims Revision Batch Bilingual
+428          | 2024-09-10     | NDA Offline Batch
+427          | 2024-09-27     | SSB Interview Program
+426          | 2024-09-19     | RRB NTPC (CBT 01 & 02) Batch
+425          | 2024-09-12     | MPPSC Answer Writing Practice
+424          | 2024-09-10     | Hindi Literature Optional (Offline) error
+423          | 2024-09-19     | UP SI Daroga Foundation Batch
+422          | 2024-09-19     | UP SI Daroga मूलविधि Batch
+421          | 2024-09-10     | Class 12th Board Hindi Medium Aarambh Science Batch
+420          | 2024-09-10     | Class 12th Board English Medium Aarambh Science Batch
+419          | 2024-09-17     | 70th BPSC Prelims Revision Batch
+418          | 2024-09-12     | NCERT Geography by Shubham Gupta Sir
+417          | 2024-09-24     | RAS (Pre+Mains) Foundation Batch 2025
+416          | 2024-09-17     | CTET Dec 2024 Foundation Batch
+415          | 2024-09-10     | Hindi Literature Optional
+414          | 2024-09-05     | Bihar Daroga (PT + Mains + Physical Test) Batch-II 2024
+413          | 2024-09-17     | Mission SBI PO (Pre + Mains) 2024-25 Batch
+412          | 2024-09-04     | SSB Interview Program
+411          | 2024-09-24     | 71st BPSC on-line (P.T + Mains+Interview) Batch-II
+410          | 2024-09-24     | UPSC G.S (Prelims+Mains) Foundation Programme 2026 English Medium (Offline Class) Karol Bagh
+409          | 2024-09-05     | Physics Foundation 2024 by Khan Sir
+408          | 2024-09-05     | Indian Map 2024 by Khan Sir
+407          | 2024-09-25     | UPSC (Pre+Mains) Foundation Batch 2026 (English Medium)
+406          | 2024-09-16     | UPSC (Pre+Mains) Foundation Batch 2026 (Hindi Medium)
+405          | 2024-09-09     | CDS-01 2025 Target Batch
+404          | 2024-09-09     | NDA-01 2025 Target Batch
+403          | 2024-09-05     | NEET 2025 Mission 200 Days Batch Hindi Medium
+402          | 2024-09-09     | NEET 2025 Physics By Mohit Agarwal Sir (Hindi Medium)
+401          | 2024-09-09     | CDS Target Batch (Dehradun Offline)
+400          | 2024-09-09     | NDA Target Batch (Dehradun Offline)
+399          | 2024-09-09     | CDS-01 2025 Target Batch (Dehradun Offline)
+398          | 2024-09-09     | NDA-01 2025 Target Batch (Dehradun Offline)
+397          | 2024-08-28     | SSC GD Foundation 2024-25
+396          | 2024-12-23     | UPSC G.S (Prelims+Mains)फाउंडेशन प्रोग्राम 2026 हिंदी माध्यम (Offline Class) Mukherjee Nagar
+395          | 2024-08-10     | संयोजन Series 70th BPSC Prelims
+394          | 2024-08-29     | Repeater Yearlong Boring Road (Patna) Offline Bilingual Batch NEET 2025
+393          | 2024-09-05     | NEET 2025 Mission 200 Days Batch English Medium
+392          | 2024-09-09     | NEET 2025 Physics By DSP Sir (English Medium)
+391          | 2024-09-24     | Classroom off-Line 71st BPSC Batch-II (Boring Road)
+390          | 2024-09-10     | CAPF AC Foundation Batch 2025
+389          | 2024-09-10     | Classroom off-Line 71st BPSC Batch-II (Musallahpur)
+388          | 2024-08-01     | RRB JE CBT-1 Batch 2024
+387          | 2024-08-01     | RRB JE CBT (I+II) Civil Engineering Batch 2024
+386          | 2024-08-01     | RRB JE CBT (I+II) Mechanical Engineering Batch 2024
+385          | 2024-08-01     | RRB JE CBT (I+II) Electrical Engineering Batch 2024
+384          | 2024-08-29     | Ranker's Batch Boring Road Patna Offline Bilingual NEET 2025
+383          | 2024-07-30     | Maths Foundation 2024-25 by P.K Sir
+382          | 2024-09-09     | UPSC & UPPSC (Pre+Mains) Foundation Batch 2025 (Offline Prayagraj)
+381          | 2024-08-05     | IBPS Mains Practice Batch 2024
+380          | 2024-07-23     | UPSC CSAT 2025 Hindi Medium (Offline-Prayagraj)
+379          | 2024-07-23     | UPSC CSAT 2025 Hindi Medium (Online)
+378          | 2024-07-29     | MPPSC Foundation (Prelims + Mains) Batch 2025
+377          | 2024-07-29     | Special Batch By Shubham Gupta Sir
+376          | 2024-07-16     | SSB Interview Program
+375          | 2024-07-16     | MPTET वर्ग Target Batch
+373          | 2024-07-25     | NEET 2025 Mission 250 Days Batch English Medium
+372          | 2024-07-26     | Geography Optional English Medium
+371          | 2024-07-09     | Hindi Foundation Batch 2024
+370          | 2024-07-08     | SSC CGL Tier-I Practice Batch
+369          | 2024-07-25     | UPSC G.S (Prelims+Mains) Foundation Programme 2025 English Medium (Offline Class) Karol Bagh
+368          | 2024-07-24     | error
+367          | 2024-07-02     | Sociology Optional Hindi Medium
+366          | 2024-07-22     | Maths Optional Bilingual
+365          | 2024-07-23     | Polity Foundation by Khan Sir
+364          | 2024-07-04     | Geography Foundation by Khan Sir
+363          | 2024-07-09     | Current Affairs (UPSC & State PSC) Batch 2024-25 (Hindi Medium)
+362          | 2024-06-29     | IBPS RRB 2024 (Pre) Batch
+361          | 2024-07-09     | Current Affairs (UPSC & State PSC) Batch 2024-25 (English Medium)
+360          | 2024-07-16     | Mathematics Foundation Batch by Bharat Gupta Sir
+359          | 2024-07-01     | SSB Interview Program
+358          | 2024-07-09     | UPSC & UPPSC (Pre+Mains) Foundation Batch 2025 (Offline Prayagraj)
+357          | 2024-06-20     | UGC NET/JRF (Paper-2) POLITICAL SCIENCE Foundation Batch 2024
+356          | 2024-06-20     | UGC NET/JRF (Paper-2) COMMERCE Foundation Batch 2024
+355          | 2024-06-20     | UGC NET/JRF (Paper-2) HISTORY Foundation Batch 2024
+354          | 2024-06-20     | UGC NET/JRF (Paper-2) ENGLISH Foundation Batch 2024
+353          | 2024-06-20     | UGC NET/JRF (Paper-2) HINDI Foundation Batch 2024
+352          | 2024-06-20     | UGC NET/JRF (Paper-2) GEOGRAPHY Foundation Batch 2024
+351          | 2024-06-20     | UGC NET/JRF (Paper-1) Foundation Batch 2024
+350          | 2024-07-25     | UPSC Foundation Offline Batch - 2025 (Boring Road)
+349          | 2024-07-23     | UPSC Foundation Offline Batch - 2025 (Musallahpur)
+348          | 2024-06-18     | SSB Interview Program
+347          | 2024-06-20     | G.S Special 2.0 Batch
+346          | 2024-06-13     | JEE 2025 Maths By Kundan Mankan Sir (Bilingual)
+345          | 2024-07-02     | UPSC G.S (Prelims+Mains)फाउंडेशन प्रोग्राम 2025 हिंदी माध्यम (Offline Class) Mukherjee Nagar
+344          | 2024-06-18     | Biology Foundation 2024 by Amrita Ma'am
+343          | 2024-07-24     | Public Administration Optional English Medium
+342          | 2024-06-12     | NDA Math Foundation by Prashant Sir
+341          | 2024-06-03     | NEET 2025 Physics By Mohit Agarwal Sir (English Medium)
+340          | 2024-06-03     | NEET 2025 Physics By SSP Sir (Hindi Medium)
+339          | 2024-06-10     | Class 11th Vision 250 Days English Batch NEET 2026
+338          | 2024-06-10     | Class 11th Vision 250 Days Bilingual Batch JEE 2026
+337          | 2024-05-22     | Uttar Pradesh जिला दर्शन
+336          | 2024-05-27     | Calculation Booster Batch By Neeraj Sir
+335          | 2024-06-10     | JEE 2025 Mission 200 Days Batch Bilingual
+334          | 2024-06-01     | SSB Interview Program
+333          | 2024-06-10     | SSC MTS/हवलदार Target Batch 2024
+332          | 2024-06-27     | Class 11th Yearlong Boring Road (Patna) Offline Bilingual Batch-II JEE 2026
+331          | 2024-07-04     | 71st BPSC on-line (P.T + Mains+Interview) Batch
+330          | 2024-07-04     | Classroom off-Line 71st BPSC Batch (Musallahpur)
+329          | 2024-07-23     | Classroom off-Line 71st BPSC Batch (Boring Road)
+328          | 2024-05-23     | AFCAT-2 2024 Foundation Batch
+327          | 2024-05-27     | NEET 2025 Mission 300 Days Batch Hindi Medium
+326          | 2024-05-30     | NEET 2025 Mission 300 Days Batch English Medium
+325          | 2024-05-16     | SSB Interview Program
+324          | 2024-05-16     | AGNIVEER VAYU (X+Y) | NAVY SSR | MR | ICG Batch 2024
+323          | 2024-05-14     | Sociology Optional Hindi Medium
+321          | 2024-05-13     | Class 11th Yearlong Musallahpur (Patna) Offline Bilingual Batch JEE 2026
+320          | 2024-05-13     | Class 12th/ Dropper Yearlong Musallahpur (Patna) Offline Bilingual Batch JEE 2025
+305          | 2024-06-11     | Achiever/Dropper Yearlong Boring Road (Patna) Offline Bilingual Batch NEET 2025
+304          | 2024-05-03     | Chemistry Foundation (Recorded)
+303          | 2024-05-10     | JE (Electrical) Engineering Foundation Batch 2024
+302          | 2024-05-10     | JE (Mechanical) Engineering Foundation Batch 2024
+301          | 2024-05-10     | JE (Civil) Engineering Foundation Batch 2024
+300          | 2024-05-09     | CTET July Batch 2024
+299          | 2024-05-07     | Class 11th Yearlong Musallahpur (Patna) Offline Bilingual Batch NEET 2026
+298          | 2024-04-24     | Class 11th Yearlong Boring Road (Patna) Offline Bilingual Batch NEET 2026
+297          | 2024-05-06     | MP महिला सुपरवाइजर Selection Batch 2024
+296          | 2024-05-07     | Bank Foundation (Prelims + Mains) Batch 2024-25
+295          | 2024-05-01     | SSB Interview Program
+294          | 2024-04-29     | CAPF Paper-II Batch 2024
+293          | 2024-04-24     | Class 12th/Dropper Yearlong Boring Road (Patna) Offline Bilingual Batch NEET 2025
+292          | 2024-04-24     | Class 12th/Dropper Yearlong Musallahpur (Patna) Offline Bilingual Batch NEET 2025
+291          | 2024-04-24     | SSB Interview Program
+290          | 2024-06-24     | History Optional
+289          | 2024-04-23     | RPF S.I & Constable Batch 2024
+288          | 2024-05-22     | UPSC (Pre+Mains) Foundation Batch 2025 (English Medium)
+287          | 2024-05-21     | UPSC (Pre+Mains) Foundation Batch 2025 (Hindi Medium)
+286          | 2024-05-22     | UPSC G.S (Prelims+Mains) Foundation Programme 2025 English Medium (Offline Class) Karol Bagh
+285          | 2024-05-10     | UPSC G.S (Prelims+Mains)फाउंडेशन प्रोग्राम 2025 हिंदी माध्यम (Offline Class) Mukherjee Nagar
+284          | 2025-07-15     | Youtube Series
+283          | 2024-05-02     | Hindi Literature Optional
+282          | 2024-04-09     | BPSC TRE 4.0 Class (1 to 5)
+281          | 2024-04-09     | BPSC TRE 4.0 Class (6 to 8 & 9 to 10)
+280          | 2024-04-15     | BSPHCL TG-III Batch 2024
+279          | 2024-04-02     | Sociology Optional Hindi Medium
+278          | 2024-04-01     | SSB Interview Program
+277          | 2024-04-09     | SSC Maths Foundation Batch 2024
+276          | 2024-04-09     | SSC Reasoning Foundation Batch 2024
+275          | 2024-04-09     | SSC English Foundation Batch 2024
+274          | 2024-03-28     | Maths Optional Bilingual
+273          | 2024-04-08     | Rajasthan CET (12th + Graduation Level) Batch 2024
+272          | 2024-05-14     | UPPSC (Prelims + Mains) Batch - 2025
+271          | 2024-04-01     | UPSSSC-(AGTA) Batch 2024
+270          | 2024-04-01     | UPSSSC-Junior Assistant (JA) Batch 2024
+269          | 2024-04-01     | UPSSSC JE (Civil) - Batch 2024
+268          | 2024-04-22     | Class 11th Yearlong Patna Offline Bilingual Batch NEET 2026
+267          | 2024-04-22     | Class 12th Yearlong Patna Offline Bilingual Batch NEET 2025
+266          | 2024-04-22     | Dropper Yearlong Patna Offline Bilingual Batch NEET 2025
+265          | 2024-05-09     | Class 11th Yearlong Boring Road (Patna) Offline Bilingual Batch JEE 2026
+264          | 2024-04-29     | Class 12th Yearlong Patna Offline Bilingual Batch JEE 2025
+263          | 2024-05-09     | Class 12th/Dropper Yearlong Boring Road (Patna) Offline Bilingual Batch JEE 2025
+262          | 2024-04-29     | CDS-2 Foundation Batch 2024
+261          | 2024-04-29     | NDA-2 Foundation Batch 2024
+260          | 2024-04-29     | CDS-2 Foundation Batch 2024 (Dehradun  Offline)
+259          | 2024-04-29     | NDA-2 Foundation Batch 2024 (Dehradun Offline)
+258          | 2024-04-01     | NCERT Foundation Batch 2024
+257          | 2024-04-22     | Bihar Daroga (PT + Mains + Physical Test) Batch 2024
+256          | 2024-04-01     | UPPSC-2024 Prelims Practice Batch (UPPSC & RO/ARO)
+255          | 2024-03-28     | Advance Maths Foundation Batch by Gaurav Sir
+254          | 2024-04-09     | SSC Mahapack
+253          | 2024-04-29     | Class 11th Yearlong Bilingual Batch JEE 2026
+252          | 2024-04-18     | Class 11th Yearlong Hindi Batch JEE 2026
+251          | 2024-05-01     | Class 12th Yearlong Bilingual Batch JEE 2025
+250          | 2024-04-16     | Class 12th Yearlong Hindi Batch JEE 2025
+249          | 2024-05-01     | Dropper Yearlong Bilingual Batch JEE 2025
+248          | 2024-04-23     | Dropper Yearlong Hindi Batch JEE 2025
+246          | 2024-06-06     | UPSC & UPPSC (Pre+Mains) Foundation Batch 2025 (Offline Prayagraj)
+244          | 2024-03-13     | UPPSC RO/ARO (Recorded + Live) Batch
+243          | 2024-03-07     | Reasoning Batch 03 (2024)
+242          | 2024-03-07     | English Foundation Batch-04 By Priyanshu Sir
+240          | 2024-04-22     | Class 11th Yearlong English Batch NEET 2026
+239          | 2024-04-22     | Class 11th Yearlong Hindi Batch NEET 2026
+238          | 2024-04-22     | Class 12th Yearlong English Batch NEET 2025
+237          | 2024-04-22     | Class 12th Yearlong Hindi Batch NEET 2025
+232          | 2024-05-23     | Dropper Yearlong Hindi Batch NEET 2025
+229          | 2024-04-27     | Dropper Yearlong English Batch NEET 2025
+226          | 2024-03-20     | MPPSC Foundation (Prelims + Mains) Batch 2025
+225          | 2024-03-07     | SSB Interview Program
+224          | 2024-02-26     | UP Police Constable 2024 - Recorded Batch
+223          | 2024-02-22     | Foundation (Recorded Batch) by Khan Sir
+222          | 2024-02-27     | Biology Foundation 2024 by Khan Sir
+221          | 2024-03-05     | World Map 2024 by Khan Sir
+220          | 2024-02-23     | Maths Optional Bilingual
+219          | 2024-02-20     | Sociology Optional Hindi Medium
+218          | 2024-03-12     | CUET (Arts) Target Batch 2024
+217          | 2024-03-12     | CUET (Language + G.T.) 2024 Target Batch
+216          | 2024-03-12     | CUET (Commerce) 2024 Target Batch
+215          | 2024-03-12     | CUET (Science) 2024 Target Batch
+214          | 2024-02-20     | RRB ALP/TECH. 2024 CBT 1 + CBT2 BATCH 2024
+213          | 2024-02-20     | SSB Interview Program
+212          | 2024-02-20     | Mission NEET 2024 (60 Days) Batch (Hindi Medium)
+210          | 2024-02-05     | Mission NEET 2024 (75 Days) Batch (English Medium)
+209          | 2024-02-10     | Physics Foundation (Recorded)
+207          | 2024-01-18     | Current Affairs UPSC (Prelims) 2024-25 (Hindi Medium)
+206          | 2024-01-22     | UPSC CSAT 2024 Hindi Medium (Offline)
+205          | 2024-01-16     | NDA-1 2024 Crash Course
+204          | 2024-01-16     | CDS-1 2024 Crash Course
+203          | 2024-01-11     | Current Affairs UPSC (Prelims) 2024-25 (English Medium)
+202          | 2024-01-16     | Sociology Optional Hindi Medium
+201          | 2024-01-18     | SSC CHSL (Tier I + Tier II) 2024
+200          | 2024-01-09     | SSB Interview Program
+199          | 2024-01-22     | UPSC (Pre+Mains) Foundation Batch 2025 (English Medium)
+198          | 2024-01-04     | MPPSC Prelims Hindi Medium Batch 2024
+197          | 2023-12-28     | GK/GS Test with Discussion
+196          | 2023-12-28     | Bihar Daroga Mains 2023
+195          | 2023-12-28     | UP Police Constable Practice Batch - 2023
+194          | 2024-02-22     | Foundation (Recorded Batch) by Khan Sir
+193          | 2024-01-04     | English Foundation by Juhi Ma’am
+192          | 2023-12-26     | Agniveer Vayu II Navy SSR II MR II ICG Nistar Batch
+191          | 2023-12-21     | PSIR Optional Hindi Medium
+190          | 2024-01-16     | UPSC (Pre+Mains) Foundation Batch 2025 (Hindi Medium)
+189          | 2023-12-19     | UPSC CSAT 2024 Hindi Medium (Online)
+188          | 2023-12-26     | BPSC 70th  BATCH-2  2024 on-line (P.T + Mains)
+187          | 2023-12-26     | Classroom off-Line BPSC Batch- 2 2024 (Branch- Boring Road)
+186          | 2023-12-05     | Classroom off-Line BPSC Batch- 2 2024 (Branch- Musallahpur)
+185          | 2023-12-11     | Essay Course (GS Mains) UPSC 2024
+184          | 2023-12-05     | Economics Foundation by Khan Sir
+183          | 2023-12-14     | SSC CPO-SI 2024 Foundation Batch
+182          | 2023-11-23     | NCERT Geography (Recorded)
+180          | N/A            | संयोजन Series 69th BPSC MAINS
+179          | 2024-01-22     | UPSC G.S (Prelims+Mains) Foundation Batch 2024-25 English Medium (Offline Class) Karol Bagh
+178          | 2023-11-23     | SSC GD Constable 2024 Target Batch
+174          | 2023-11-21     | G.S Special Batch
+173          | 2023-11-21     | NCERT Foundation Batch
+172          | 2024-01-16     | UPSC G.S (Prelims+Mains)फाउंडेशन प्रोग्राम 2024-25 हिंदी माध्यम (Offline Class) Mukherjee Nagar
+171          | 2023-11-02     | Bihar Daroga Practice & Revision Batch
+169          | 2023-10-19     | UPPSC RO/ARO Batch
+168          | N/A            | Maths Foundation (2022)
+167          | N/A            | SSB Interview
+166          | 2023-10-10     | SSC CGL Tier I & II Foundation Batch 2024
+165          | 2023-10-03     | Indian Map 2023 by Khan Sir
+164          | 2023-10-03     | Biology Foundation 2023 by Amrita Ma'am
+163          | 2023-10-05     | 69th BPSC Mains Essay Offline Batch
+162          | 2023-10-05     | 69th BPSC Mains Online Batch
+161          | 2023-10-05     | 69th BPSC Mains Statistics Online Batch
+160          | 2023-10-05     | 69th BPSC Mains Essay Online Batch
+159          | 2023-10-05     | 69th BPSC Mains Offline Batch
+158          | 2023-10-05     | 69th BPSC Mains Statistics Offline Batch
+157          | N/A            | UPSC CSAT 2024 English Medium (Online)
+156          | 2023-11-09     | UPSC CSAT 2024 Hindi Medium (Online)
+155          | N/A            | UPSC CSAT 2024 Hindi Medium (Offline)
+154          | N/A            | Bihar SSC (10+2) Inter Level by Khan Sir & Team
+153          | 2023-09-26     | UPSC (Pre + Mains) Batch-II English Medium 2025
+152          | 2023-09-28     | Maths Foundation By Gaurav Sir
+151          | N/A            | UPSC CSAT 2024 English Medium (Offline)
+149          | 2023-09-26     | SSC GD Constable 2023-24
+148          | 2023-09-19     | NDA- 1 2024 Foundation Batch | Astra 2.0 offline
+147          | 2023-09-12     | AFCAT-1 2024 Foundation Batch | Cheetah 1.0
+146          | 2023-09-12     | CDS-1 2024 Foundation Batch | Dhruva 1.0
+145          | 2023-09-12     | CAPF AC 2024 Foundation Batch | SenaNayak 1.0
+144          | 2023-09-19     | NDA- 1 2024 Foundation Batch | Astra 2.0
+143          | N/A            | UPSC G.S (Prelims+Mains)फाउंडेशन प्रोग्राम 2024-25 हिंदी माध्यम (Offline Class) Mukherjee Nagar Batch-III
+142          | N/A            | Tejas English Quiz 2.0 by Priyanshu Sir
+141          | N/A            | English Foundation Batch - 03 By Priyanshu Sir
+140          | N/A            | Error
+139          | N/A            | SSC CHSL Tier II
+138          | N/A            | Delhi Police Constable Batch 2023
+137          | 2023-09-12     | UPSC G.S (Prelims+Mains)फाउंडेशन प्रोग्राम  2024-25 हिंदी माध्यम (Offline Class) Mukherjee Nagar Batch-II
+136          | N/A            | Classroom off-Line (BPSC Batch 2024) Boring Road
+135          | N/A            | BPSC 70th - 2024 on-line (P.T + Mains + Essay)
+134          | N/A            | Classroom off-Line BPSC Batch 2024 (Branch- Musallahpur)
+133          | N/A            | UPSSSC PET (Preliminary Eligibility Test) 2023
+132          | 2023-07-15     | SSC CPO 2023
+131          | 2024-01-16     | Geography Optional Hindi Medium
+130          | 2024-01-09     | Maths Optional Bilingual
+129          | N/A            | Philosophy Optional Hindi Medium (Offline Class)
+128          | 2023-12-19     | Sociology Optional Hindi Medium
+127          | N/A            | History Optional Hindi Medium (Offline Class)
+126          | 2024-01-15     | Public Administration Optional English Medium
+125          | 2023-08-21     | UPSC G.S (Prelims+Mains) Foundation Batch 2024-25 English Medium (Offline Class) Karol Bagh (Batch-I)
+124          | 2023-08-21     | UPSC G.S (Prelims+Mains)फाउंडेशन प्रोग्राम  2024-25 हिंदी माध्यम (Offline Class) Mukherjee Nagar Batch-I
+123          | N/A            | UPSC Foundation Batch 2024-25
+122          | N/A            | SSC CGL (Tier-II) 2023
+121          | N/A            | UP SI-दरोगा Batch 2023
+120          | N/A            | UP Police Constable Batch-2023
+119          | N/A            | Agniveer Vayu (X+Y) + Navy SSR
+118          | N/A            | Maths Foundation 2023-24 by P.K Sir
+116          | 2023-07-04     | History Foundation by Khan Sir
+113          | N/A            | Biology Foundation (Recorded)
+112          | 2023-07-04     | UPSC (Pre + Mains) Batch-II (Hinglish)
+111          | N/A            | SSC ( M.T.S.) Fast Track Batch - 2023
+110          | N/A            | Ethics Batch (GS-IV)
+109          | N/A            | History Foundation (Recorded)
+108          | N/A            | BPSC (Teacher) Class 9 to 12 by Khan Sir & Team
+107          | N/A            | BPSC (Teacher) Class 1 to 5 by Khan Sir & Team
+103          | N/A            | Physics Foundation Batch (2023)
+102          | 2023-05-01     | NDA MATHS FOUNDATION BATCH by Prashant Sir
+101          | N/A            | Bihar Police (2023)
+100          | N/A            | SSC CHSL (Tier-1 & Tier 2) - 2023
+99           | N/A            | UPPSC (Prelims + Mains) Batch - 2024
+98           | N/A            | Maths for SSC CGL
+97           | N/A            | Reasoning for SSC CGL
+96           | N/A            | English for SSC CGL
+95           | 2025-07-01     | Classroom off-line (BPSC Batch)
+94           | N/A            | Chemistry Foundation 2023 by Khan Sir
+93           | N/A            | World Map 2023 by Khan Sir
+92           | N/A            | NDA-2 2023 | Astra 1.0 by Khan Sir & Team
+91           | N/A            | Bihar Daroga 2023 (Classroom off-Line batch)
+90           | N/A            | Bihar Daroga 2023 (Online)
+89           | N/A            | Physics Foundation (Recorded)
+86           | N/A            | SSC CGL Foundation (Tier-I)
+84           | N/A            | Economics Foundation (Recorded)
+83           | 2023-11-24     | NCERT Geography Course 2023
+82           | N/A            | MP-PSC (Prelims & Mains) 2023
+80           | N/A            | eco trash
+79           | N/A            | Biology Foundation 2023
+78           | N/A            | Airforce (X+Y) 2023
+74           | N/A            | CDS 2023
+73           | N/A            | English Foundation 2023
+68           | N/A            | NDA-1 Super Fast
+67           | N/A            | English Foundation Batch - 02
+66           | N/A            | Airforce (X+Y) Group | Navy SSR | ICG Navik
+65           | N/A            | Indian Map 2023 (Recorded)
+62           | N/A            | SSC-MTS
+61           | 2023-06-06     | MPPSC Foundation (Prelims + Mains) Batch
+60           | N/A            | MP-PSC (Prelims)
+57           | N/A            | Geography (recorded )
+54           | N/A            | Biology (Recorded)
+47           | N/A            | BPSC-PT(Recorded)
+46           | N/A            | SSC-D (Tonic)
+39           | N/A            | CHSL ( LDC ) Target 2022
+36           | N/A            | Airforce + Navy + ICG
+35           | N/A            | Group D Super Fast
+34           | N/A            | NDA -2 Super Fast
+33           | N/A            | NDA-1 (2023)
+32           | N/A            | Airforce (X + Y)
+30           | N/A            | Indian Navy SSR
+25           | N/A            | English Foundation
+23           | N/A            | Economics
+20           | N/A            | Geography Foundation (Recorded)
+19           | N/A            | Polity Foundation (Recorded)
+18           | N/A            | Biology Foundation 2022
+17           | N/A            | Reasoning Batch 02 (2023)
+16           | N/A            | Physics Foundation
+15           | N/A            | UPSC (IAS) Hinglish Medium
+14           | N/A            | UPSC (IAS) English Medium
+13           | 2023-01-16     | BPSC-2023 (P.T+MAINS)
+11           | N/A            | SSC(CGL) 2022-23
+10           | N/A            | SSC GD
+9            | N/A            | SSC CHSL 2023
+------------------------------------------------------------------------------------------

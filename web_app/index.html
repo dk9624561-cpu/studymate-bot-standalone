@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KGS IAS Bot - Courses, Topics, Lectures & Links Navigator</title>
+  <meta name="description" content="Interactive KGS IAS Bot to browse Khan Sir & KGS courses, topics, lectures, video links, and study PDF notes seamlessly." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated Background Canvas / Particles -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div id="particles-container"></div>
+
+  <div class="app-container">
+    <!-- Header -->
+    <header class="main-header">
+      <div class="brand">
+        <div class="brand-avatar">
+          <img src="https://i.postimg.cc/x1M0YN5Z/sunny.jpg" alt="KGS IAS Avatar" id="brandAvatar" />
+          <span class="status-indicator"></span>
+        </div>
+        <div class="brand-info">
+          <h1>KGS IAS Navigator Bot</h1>
+          <p class="subtitle">Explore 1000+ Courses, Topics, Lectures & Media Links</p>
+        </div>
+      </div>
+      
+      <div class="header-actions">
+        <button id="resetBtn" class="btn btn-secondary" title="Reset Navigation">
+          <i class="fa-solid fa-rotate-left"></i> Reset
+        </button>
+        <a href="https://t.me/piu_piu_56" target="_blank" class="btn btn-telegram">
+          <i class="fa-brands fa-telegram"></i> Telegram
+        </a>
+      </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-bar" aria-label="Breadcrumb navigation">
+      <div class="breadcrumb-trail" id="breadcrumbTrail">
+        <span class="crumb active" data-step="courses"><i class="fa-solid fa-graduation-cap"></i> Courses</span>
+      </div>
+      <div class="stats-badge" id="statsBadge">
+        <i class="fa-solid fa-layer-group"></i> <span id="itemCount">Loading...</span>
+      </div>
+    </nav>
+
+    <!-- Search & Filter Bar -->
+    <div class="search-section" id="searchSection">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="searchInput" placeholder="Search course by name or keyword..." autocomplete="off" />
+        <button id="clearSearchBtn" class="clear-btn" style="display:none;"><i class="fa-solid fa-circle-xmark"></i></button>
+      </div>
+      <div class="category-pills" id="categoryPills">
+        <button class="pill active" data-cat="all">All Courses</button>
+        <button class="pill" data-cat="kgs">KGS Special</button>
+        <button class="pill" data-cat="recent">New Batches</button>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="content-wrapper" id="mainContent">
+      <div id="viewContainer" class="view-grid">
+        <div class="loader-box" id="loaderBox">
+          <div class="custom-spinner"></div>
+          <p class="loader-text">Loading KGS IAS Courses...</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Lecture Links Modal -->
+  <div class="modal-backdrop" id="lectureModal" style="display: none;">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-header">
+        <div class="modal-icon">
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+        <div class="modal-header-text">
+          <span class="modal-badge">LECTURE LINKS & MEDIA</span>
+          <h2 id="modalLectureTitle">Lecture Details</h2>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="loader-box" id="modalLoader" style="display: none;">
+          <div class="custom-spinner"></div>
+          <p>Fetching lecture stream & note URLs...</p>
+        </div>
+
+        <div id="modalLinksContainer" class="links-list"></div>
+      </div>
+
+      <div class="modal-footer">
+        <p class="modal-tip"><i class="fa-solid fa-lightbulb"></i> Tip: You can copy any link or click to play directly in web or player!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span id="toastMsg">Link copied to clipboard!</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
