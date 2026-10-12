@@ -250,26 +250,86 @@ def fetch_lectures(topic_id, token=None):
 
     return [], []
 
+def format_video_response(raw_video_data):
+    """Normalize video data into the exact StudyMate schema."""
+    if not isinstance(raw_video_data, dict):
+        return {"hd_video_url": "", "video_url": "", "pdfs": []}
+
+    v = raw_video_data.get("video", raw_video_data)
+    hd_url = v.get("hd_video_url") or v.get("video_url") or ""
+    vid_url = v.get("video_url") or v.get("hd_video_url") or ""
+
+    if not vid_url and v.get("mp4s"):
+        mp4_list = v.get("mp4s")
+        if isinstance(mp4_list, list) and len(mp4_list) > 0:
+            vid_url = mp4_list[0].get("url", "")
+            hd_url = mp4_list[-1].get("url", "")
+
+    raw_pdfs = v.get("pdfs") or []
+    pdfs = []
+    if isinstance(raw_pdfs, list):
+        for p in raw_pdfs:
+            if isinstance(p, dict):
+                pdfs.append({
+                    "title": p.get("title", "Lecture PDF"),
+                    "url": p.get("url", "")
+                })
+
+    return {
+        "hd_video_url": hd_url,
+        "video_url": vid_url,
+        "pdfs": pdfs
+    }
+
 def fetch_video_details(video_id):
-    """Fetch direct stream and PDF links for a lecture with retries & SQLite cache failover."""
+    """Fetch direct stream and PDF links for a lecture with multi-tier failover:
+    1. SQLite cache.
+    2. Direct KGS Authenticated Video API.
+    3. StudyMate Video API.
+    """
     cache_key = f"video_{video_id}"
     cached_data = get_cache(cache_key)
     if cached_data is not None and isinstance(cached_data, dict) and cached_data:
         return cached_data
 
+    # Tier 1: Direct KGS Authenticated Video API
+    auth_token = get_valid_kgs_token()
+    if auth_token:
+        for ep in [
+            f"https://khanglobalstudies.com/api/videos/{video_id}",
+            f"https://api.khanglobalstudies.com/cms/videos/{video_id}"
+        ]:
+            try:
+                auth_headers = dict(HEADERS)
+                auth_headers["Authorization"] = f"Bearer {auth_token}"
+                auth_headers["Origin"] = "https://khanglobalstudies.com"
+                auth_headers["Referer"] = "https://khanglobalstudies.com/"
+                res = _SESSION.get(ep, headers=auth_headers, timeout=8)
+                if res.status_code == 200:
+                    raw_data = res.json()
+                    if isinstance(raw_data, dict) and (raw_data.get("video") or raw_data.get("video_url") or raw_data.get("hd_video_url")):
+                        formatted = format_video_response(raw_data)
+                        set_cache(cache_key, formatted)
+                        return formatted
+            except Exception as e:
+                logger.debug(f"Direct KGS video fetch failed at {ep}: {e}")
+
+    # Tier 2: StudyMate Video API
     url = VIDEO_URL.format(video_id)
     import time
     for attempt in range(3):
         try:
-            res = _SESSION.get(url, headers=HEADERS, timeout=10)
+            res = _SESSION.get(url, headers=HEADERS, timeout=8)
             if res.status_code == 200:
                 data = res.json()
                 if data:
-                    set_cache(cache_key, data)
-                    return data
+                    formatted = format_video_response(data)
+                    set_cache(cache_key, formatted)
+                    return formatted
         except Exception as e:
             if attempt == 2:
                 logger.warning(f"Live API for video {video_id} failed after attempts ({e}).")
             time.sleep(0.2)
 
-    return {}
+    return {"hd_video_url": "", "video_url": "", "pdfs": []}
+
