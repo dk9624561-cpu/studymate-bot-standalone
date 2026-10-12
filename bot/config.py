@@ -14,3 +14,10 @@ VIDEO_URL = "https://study-mate.in/api/video/{}"
 
 # Pagination settings
 ITEMS_PER_PAGE = 8
+
+# Default Upload Channel ID or Username (optional, can also be set dynamically via /setchannel)
+UPLOAD_CHANNEL = os.getenv("UPLOAD_CHANNEL", "")
+
+# Optional KGS Auth Token (Bearer token for direct official API access)
+KGS_TOKEN = os.getenv("KGS_TOKEN", "")
+

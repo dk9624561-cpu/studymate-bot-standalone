@@ -25,7 +25,7 @@ import telebot
 from telebot import types
 
 from bot.config import BOT_TOKEN, ITEMS_PER_PAGE
-from bot.api import fetch_batches, fetch_topics, fetch_lectures, fetch_video_details
+from bot.api import fetch_batches, fetch_topics, fetch_lectures, fetch_video_details, get_batch_details
 
 if not BOT_TOKEN or BOT_TOKEN == "YOUR_TELEGRAM_BOT_TOKEN_HERE":
     logger.error("BOT_TOKEN is not configured! Please set BOT_TOKEN in .env or environment.")
@@ -156,11 +156,92 @@ def send_courses_page(chat_id, message_id=None, page=0, search_query=""):
     else:
         bot.send_message(chat_id, text, reply_markup=markup)
 
+def build_batch_metadata(course_id, topics, all_videos=None, all_notes=None):
+    course_id = str(course_id).strip()
+    batch_obj = get_batch_details(course_id)
+
+    title = batch_obj.get("title") if batch_obj else None
+    if not title or title.strip() == f"Batch {course_id}":
+        title = f"Batch {course_id}"
+    else:
+        title = title.strip()
+
+    start_at = batch_obj.get("start_at") or "N/A" if batch_obj else "N/A"
+    end_at = batch_obj.get("end_at") or "Lifetime" if batch_obj else "Lifetime"
+    price = batch_obj.get("price") or "Paid" if batch_obj else "Paid"
+    thumb_url = batch_obj.get("image_thumb") or batch_obj.get("image_large") or "https://i.postimg.cc/x1M0YN5Z/sunny.jpg" if batch_obj else "https://i.postimg.cc/x1M0YN5Z/sunny.jpg"
+
+    total_topics = len(topics) if topics else 0
+    if all_videos is not None:
+        total_videos = len(all_videos)
+    else:
+        total_videos = sum(int(t.get("videos", 0) or 0) for t in topics) if topics else 0
+
+    if all_notes is not None:
+        total_pdfs = len(all_notes)
+    else:
+        total_pdfs = sum(int(t.get("notes", 0) or 0) for t in topics) if topics else 0
+
+    return {
+        "title": title,
+        "course_id": course_id,
+        "start_at": start_at,
+        "end_at": end_at,
+        "price": price,
+        "thumb_url": thumb_url,
+        "total_topics": total_topics,
+        "total_videos": total_videos,
+        "total_pdfs": total_pdfs,
+    }
+
+def format_txt_header(meta, custom_title=None):
+    divider = "=" * 90
+    title_line = custom_title if custom_title else "✅ KGS IAS Batch Extraction!"
+    return [
+        divider,
+        f"{title_line}",
+        "",
+        f"📚 Batch Name: {meta['title']}",
+        "",
+        "📌 App Name: KGS IAS",
+        f"🆔 Batch ID: {meta['course_id']}",
+        f"💰 Price: {meta['price']}",
+        "💳 Purchased: ❌ NO",
+        f"📅 Start Date: {meta['start_at']}",
+        f"⏳ Validity: {meta['start_at']} to {meta['end_at']}",
+        f"🖼️ Thumbnail: {meta['thumb_url']}",
+        "",
+        "📊 Content Summary:",
+        f"• 📁 Total Topics: {meta['total_topics']} Subjects",
+        f"• 📽️ Total Videos: {meta['total_videos']} Videos",
+        f"• 📘 Total PDFs: {meta['total_pdfs']} PDFs",
+        divider,
+        ""
+    ]
+
+def format_telegram_caption(meta, custom_title=None):
+    safe_title = html.escape(meta['title'])
+    title_line = custom_title if custom_title else "<b>✅ KGS IAS Batch Extraction!</b>"
+    return (
+        f"{title_line}\n\n"
+        f"📚 <b>Batch Name:</b> <i>{safe_title}</i>\n\n"
+        "<blockquote>📌 <b>App Name:</b> KGS IAS\n"
+        f"🆔 <b>Batch ID:</b> <code>{meta['course_id']}</code>\n"
+        f"💰 <b>Price:</b> {meta['price']}\n"
+        "💳 <b>Purchased:</b> ❌ NO\n"
+        f"📅 <b>Start Date:</b> {meta['start_at']}\n"
+        f"⏳ <b>Validity:</b> {meta['start_at']} to {meta['end_at']}\n"
+        f"🖼️ <b>Thumbnail:</b> <a href=\"{meta['thumb_url']}\">Click Here to View</a></blockquote>\n\n"
+        "📊 <b>Content Summary:</b>\n"
+        f"<blockquote>• 📁 <b>Total Topics:</b> {meta['total_topics']} Subjects\n"
+        f"• 📽️ <b>Total Videos:</b> {meta['total_videos']} Videos\n"
+        f"• 📘 <b>Total PDFs:</b> {meta['total_pdfs']} PDFs</blockquote>"
+    )
+
 def send_batch_extraction_card(chat_id, course_id, message_id=None, batch_obj=None):
     course_id = str(course_id).strip()
     if not batch_obj:
-        batches = fetch_batches()
-        batch_obj = next((b for b in batches if str(b.get("id")) == course_id), None)
+        batch_obj = get_batch_details(course_id)
 
     topics = fetch_topics(course_id)
     if not batch_obj and not topics:
@@ -174,36 +255,13 @@ def send_batch_extraction_card(chat_id, course_id, message_id=None, batch_obj=No
             bot.send_message(chat_id, err_text)
         return
 
-    title = batch_obj.get("title", f"Batch {course_id}") if batch_obj else f"Batch {course_id}"
-    start_at = batch_obj.get("start_at") or "N/A" if batch_obj else "N/A"
-    end_at = batch_obj.get("end_at") or "Lifetime" if batch_obj else "Lifetime"
-    thumb_url = batch_obj.get("image_thumb") or batch_obj.get("image_large") or "https://i.postimg.cc/x1M0YN5Z/sunny.jpg" if batch_obj else "https://i.postimg.cc/x1M0YN5Z/sunny.jpg"
-
-    total_topics = len(topics)
-    total_videos = sum(int(t.get("videos", 0) or 0) for t in topics)
-    total_pdfs = sum(int(t.get("notes", 0) or 0) for t in topics)
-
-    safe_title = html.escape(title)
-    text = (
-        "<b>✅ KGS IAS Batch Extraction!</b>\n\n"
-        f"📚 <b>Batch Name:</b> <i>{safe_title}</i>\n\n"
-        "<blockquote>📌 <b>App Name:</b> KGS IAS\n"
-        f"🆔 <b>Batch ID:</b> <code>{course_id}</code>\n"
-        "💰 <b>Price:</b> Paid\n"
-        "💳 <b>Purchased:</b> ❌ NO\n"
-        f"📅 <b>Start Date:</b> {start_at}\n"
-        f"⏳ <b>Validity:</b> {start_at} to {end_at}\n"
-        f"🖼️ <b>Thumbnail:</b> <a href=\"{thumb_url}\">Click Here to View</a></blockquote>\n\n"
-        "📊 <b>Content Summary:</b>\n"
-        f"<blockquote>• 📁 <b>Total Topics:</b> {total_topics} Subjects\n"
-        f"• 📽️ <b>Total Videos:</b> {total_videos} Videos\n"
-        f"• 📘 <b>Total PDFs:</b> {total_pdfs} PDFs</blockquote>"
-    )
+    meta = build_batch_metadata(course_id, topics)
+    text = format_telegram_caption(meta)
 
     markup = types.InlineKeyboardMarkup()
     markup.row(
-        types.InlineKeyboardButton(f"📽️ Video Classes ({total_videos})", callback_data=f"vclasses_{course_id}"),
-        types.InlineKeyboardButton(f"📄 PDF Notes ({total_pdfs})", callback_data=f"pdfnotes_{course_id}")
+        types.InlineKeyboardButton(f"📽️ Video Classes ({meta['total_videos']})", callback_data=f"vclasses_{course_id}"),
+        types.InlineKeyboardButton(f"📄 PDF Notes ({meta['total_pdfs']})", callback_data=f"pdfnotes_{course_id}")
     )
     markup.add(types.InlineKeyboardButton("🎬 Download All Videos (Full Batch)", callback_data=f"dl_all_v_{course_id}"))
     markup.add(types.InlineKeyboardButton("📚 Download All PDFs (Full Batch)", callback_data=f"dl_all_pdf_{course_id}"))
@@ -370,16 +428,11 @@ def handle_extract_txt(chat_id, course_id):
     all_fetch_ids = [v["id"] for v in all_videos if v.get("id")] + [n["id"] for n in all_notes if n.get("id")]
     video_details_map = fetch_details_with_progress(bot, chat_id, status_msg.message_id, all_fetch_ids, item_label="Lectures & PDFs")
 
+    meta = build_batch_metadata(course_id, topics, all_videos=all_videos, all_notes=all_notes)
     divider_115 = "=" * 115
     sub_divider_115 = "-" * 115
 
-    lines = [
-        divider_115,
-        f"                         KGS IAS BATCH {course_id} - COMPLETE LECTURES (VIDEOS) & NOTES (PDFs)",
-        "                                   (100% Complete - Har Lecture Aur Note Ka Link)",
-        divider_115,
-        ""
-    ]
+    lines = format_txt_header(meta, custom_title="✅ KGS IAS Batch Extraction! (All Content Links)")
 
     ist = zoneinfo.ZoneInfo("Asia/Kolkata")
     def get_date(item, stream_url=None):
@@ -418,27 +471,50 @@ def handle_extract_txt(chat_id, course_id):
                 v_name = v.get("name", "Video Lecture")
                 v_details = video_details_map.get(v_id, {})
                 hd_url = v_details.get("hd_video_url") or ""
-                sd_url = v_details.get("video_url") or ""
+                sd_url = v_details.get("video_url") or v.get("video_url") or ""
 
-                main_link = None
-                yt_link = None
-                for u in [sd_url, hd_url]:
-                    if u and u != "N/A":
-                        if "youtube.com" in u.lower() or "youtu.be" in u.lower():
-                            if not yt_link:
-                                yt_link = u
-                        else:
-                            if not main_link:
-                                main_link = u
+                hd_is_ak = "akamaized.net" in hd_url
+                sd_is_ak = "akamaized.net" in sd_url
+                hd_is_yt = "youtu" in hd_url
+                sd_is_yt = "youtu" in sd_url
 
-                primary_link = main_link or yt_link or None
-                v_date = get_date(v, sd_url or hd_url)
+                def clean_yt(u):
+                    m1 = re.search(r'youtube\.com/embed/([a-zA-Z0-9_-]+)', u)
+                    if m1:
+                        return f"https://www.youtube.com/watch?v={m1.group(1)}"
+                    m2 = re.search(r'youtu\.be/([a-zA-Z0-9_-]+)', u)
+                    if m2:
+                        return f"https://www.youtube.com/watch?v={m2.group(1)}"
+                    return u
+
+                player_link = None
+                stream_link = None
+
+                if hd_is_ak and sd_is_ak:
+                    if hd_url != sd_url:
+                        player_link = hd_url
+                        stream_link = sd_url
+                    else:
+                        stream_link = sd_url
+                elif hd_is_ak and not sd_is_ak:
+                    stream_link = hd_url
+                elif sd_is_ak and not hd_is_ak:
+                    stream_link = sd_url
+                elif hd_is_yt or sd_is_yt:
+                    yt_u = sd_url if sd_is_yt else hd_url
+                    stream_link = clean_yt(yt_u)
+                else:
+                    stream_link = sd_url or hd_url or None
+
+                v_date = get_date(v, stream_link or player_link)
 
                 lines.append(f"   {v_idx:02d}. {v_name}")
                 if v_date:
                     lines.append(f"       📅 Date: {v_date}")
-                if primary_link and primary_link != "N/A":
-                    lines.append(f"       🎬 Video Stream Link: {primary_link}")
+                if player_link:
+                    lines.append(f"       ▶ HD / Player Link: {player_link}")
+                if stream_link and stream_link != "N/A":
+                    lines.append(f"       🎬 Video Stream Link: {stream_link}")
 
                 v_pdfs = v_details.get("pdfs") or v.get("pdfs") or []
                 if v_pdfs:
@@ -484,11 +560,7 @@ def handle_extract_txt(chat_id, course_id):
     file_content = "\n".join(lines)
     file_bytes = io.BytesIO(file_content.encode("utf-8"))
     filename = f"Batch_{course_id}_All_Links.txt"
-    caption = (
-        f"📄 <b>Extraction Completed!</b>\n"
-        f"All real streaming & PDF URLs for <b>Batch ID {course_id}</b>.\n\n"
-        f"📊 <b>Summary:</b> {len(topics)} Topics | {len(all_videos)} Videos | {len(all_notes)} PDFs"
-    )
+    caption = format_telegram_caption(meta, custom_title="📄 <b>✅ KGS IAS Batch Extraction! (All Links TXT)</b>")
 
     try:
         bot.send_document(chat_id, file_bytes, caption=caption, visible_file_name=filename)
@@ -503,7 +575,7 @@ def handle_extract_txt(chat_id, course_id):
 def handle_dl_all_videos(chat_id, course_id):
     status_msg = bot.send_message(
         chat_id,
-        f"🎬 <b>Preparing Video Downloader File for Batch ID <code>{course_id}</code>...</b>"
+        f"🎬 <b>Preparing Video Downloader File for Batch ID <code>{course_id}</code>...</b>\n<i>Please wait...</i>"
     )
     topics = fetch_topics(course_id)
     if not topics:
@@ -521,13 +593,17 @@ def handle_dl_all_videos(chat_id, course_id):
     v_ids = [v["id"] for v in all_videos if v.get("id")]
     video_details_map = fetch_details_with_progress(bot, chat_id, status_msg.message_id, v_ids, item_label="Video Stream Links")
 
-    lines = [
-        "=" * 90,
-        f"KGS IAS - 1DM / IDM VIDEO DOWNLOAD LIST (BATCH {course_id})",
-        f"TOTAL VIDEOS: {len(all_videos)}",
-        "=" * 90,
+    meta = build_batch_metadata(course_id, topics, all_videos=all_videos, all_notes=[])
+    lines = format_txt_header(meta, custom_title="🎬 KGS IAS - 1DM / IDM VIDEO DOWNLOAD LIST")
+    lines.extend([
+        "# INSTRUCTIONS:",
+        "# 1. Android: Open 1DM / 1DM+ -> Menu -> Import Links from text file.",
+        "# 2. PC: Import in IDM / Free Download Manager or use yt-dlp.",
+        "# 3. VLC: Media -> Open Network Stream -> Paste link to play directly.",
+        "",
+        "-" * 90,
         ""
-    ]
+    ])
     for topic in topics:
         t_id = topic.get("id")
         t_name = topic.get("name", f"Topic {t_id}")
@@ -546,7 +622,7 @@ def handle_dl_all_videos(chat_id, course_id):
     file_content = "\n".join(lines)
     file_bytes = io.BytesIO(file_content.encode("utf-8"))
     filename = f"Batch_{course_id}_1DM_Video_Download.txt"
-    caption = f"🎬 <b>All Video Download Links Ready!</b>\nBatch ID: <code>{course_id}</code> | Total: {len(all_videos)} Videos"
+    caption = format_telegram_caption(meta, custom_title="🎬 <b>All Video Download Links Ready!</b>")
 
     try:
         bot.send_document(chat_id, file_bytes, caption=caption, visible_file_name=filename)
@@ -580,12 +656,8 @@ def handle_dl_all_pdfs(chat_id, course_id):
     all_fetch_ids = [n["id"] for n in all_notes if n.get("id")]
     video_details_map = fetch_details_with_progress(bot, chat_id, status_msg.message_id, all_fetch_ids, item_label="PDF Notes")
 
-    lines = [
-        "=" * 90,
-        f"KGS IAS - ALL CLASS PDF NOTES & STUDY MATERIAL (BATCH {course_id})",
-        "=" * 90,
-        ""
-    ]
+    meta = build_batch_metadata(course_id, topics, all_videos=all_videos, all_notes=all_notes)
+    lines = format_txt_header(meta, custom_title="📚 KGS IAS - ALL CLASS PDF NOTES & STUDY MATERIAL")
     total_pdf_count = 0
     for topic in topics:
         t_id = topic.get("id")
@@ -617,11 +689,16 @@ def handle_dl_all_pdfs(chat_id, course_id):
                 lines.append(f"📄 {p_title}")
                 lines.append(f"   Download URL: {p_url}\n")
 
-    lines.insert(3, f"TOTAL PDFS : {total_pdf_count}")
+    meta["total_pdfs"] = total_pdf_count
+    for idx_l, line_str in enumerate(lines[:20]):
+        if "Total PDFs:" in line_str:
+            lines[idx_l] = f"• 📘 Total PDFs: {total_pdf_count} PDFs"
+            break
+
     file_content = "\n".join(lines)
     file_bytes = io.BytesIO(file_content.encode("utf-8"))
     filename = f"Batch_{course_id}_All_PDF_Notes.txt"
-    caption = f"📚 <b>All PDF Notes Ready!</b>\nBatch ID: <code>{course_id}</code> | Total: {total_pdf_count} PDFs"
+    caption = format_telegram_caption(meta, custom_title="📚 <b>All PDF Notes Ready!</b>")
 
     try:
         bot.send_document(chat_id, file_bytes, caption=caption, visible_file_name=filename)
