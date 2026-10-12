@@ -18,6 +18,9 @@ ITEMS_PER_PAGE = 8
 # Default Upload Channel ID or Username (optional, can also be set dynamically via /setchannel)
 UPLOAD_CHANNEL = os.getenv("UPLOAD_CHANNEL", "")
 
-# Optional KGS Auth Token (Bearer token for direct official API access)
-KGS_TOKEN = os.getenv("KGS_TOKEN", "")
+# Optional KGS Auth Credentials & Token (Direct official API access)
+KGS_PHONE = os.getenv("KGS_PHONE", "7544898925")
+KGS_PASSWORD = os.getenv("KGS_PASSWORD", "75448989")
+KGS_TOKEN = os.getenv("KGS_TOKEN", "147419804|EOm8dRWhsJkHRS4Oatok5NBYIRwug62TpTx2DOIS14fefc33")
+
 

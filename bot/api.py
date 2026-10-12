@@ -3,10 +3,35 @@ from requests.adapters import HTTPAdapter
 import logging
 import json
 import os
-from bot.config import BATCHES_URL, CLASSROOM_URL, LESSON_URL, VIDEO_URL, KGS_TOKEN
+from bot.config import BATCHES_URL, CLASSROOM_URL, LESSON_URL, VIDEO_URL, KGS_TOKEN, KGS_PHONE, KGS_PASSWORD
 from bot.cache_manager import get_cache, set_cache
 
 logger = logging.getLogger(__name__)
+
+_CURRENT_KGS_TOKEN = KGS_TOKEN
+
+def get_valid_kgs_token():
+    """Retrieve or automatically refresh active KGS student session token."""
+    global _CURRENT_KGS_TOKEN
+    if _CURRENT_KGS_TOKEN:
+        return _CURRENT_KGS_TOKEN
+
+    phone = os.getenv("KGS_PHONE", KGS_PHONE)
+    password = os.getenv("KGS_PASSWORD", KGS_PASSWORD)
+    if phone and password:
+        for login_url in ["https://khanglobalstudies.com/api/login", "https://api.khanglobalstudies.com/cms/login"]:
+            try:
+                res = _SESSION.post(login_url, json={"phone": phone, "password": password}, headers=HEADERS, timeout=10)
+                if res.status_code == 200:
+                    data = res.json()
+                    t = data.get("token")
+                    if t:
+                        _CURRENT_KGS_TOKEN = t
+                        logger.info("Successfully authenticated live KGS student session!")
+                        return _CURRENT_KGS_TOKEN
+            except Exception as e:
+                logger.error(f"Failed to auto-login to KGS at {login_url}: {e}")
+    return ""
 
 # Common browser request headers
 HEADERS = {
@@ -192,22 +217,25 @@ def fetch_lectures(topic_id, token=None):
         if not cached_data.get("error"):
             return cached_data.get("videos", []), cached_data.get("notes", [])
 
-    auth_token = token or KGS_TOKEN or os.getenv("KGS_TOKEN", "")
+    auth_token = token or get_valid_kgs_token()
     if auth_token:
-        try:
-            cms_url = f"https://api.khanglobalstudies.com/cms/lessons/{topic_id}"
-            cms_headers = dict(HEADERS)
-            cms_headers["Authorization"] = f"Bearer {auth_token}"
-            cms_headers["Origin"] = "https://app2.khanglobalstudies.com"
-            cms_headers["Referer"] = "https://app2.khanglobalstudies.com/"
-            res = _SESSION.get(cms_url, headers=cms_headers, timeout=12)
-            if res.status_code == 200:
-                data = res.json()
-                if isinstance(data, dict) and not data.get("error"):
-                    set_cache(cache_key, data)
-                    return data.get("videos", []), data.get("notes", [])
-        except Exception as e:
-            logger.warning(f"KGS direct CMS lesson fetch failed for {topic_id}: {e}")
+        for ep_url in [
+            f"https://khanglobalstudies.com/api/lessons/{topic_id}",
+            f"https://api.khanglobalstudies.com/cms/lessons/{topic_id}"
+        ]:
+            try:
+                auth_headers = dict(HEADERS)
+                auth_headers["Authorization"] = f"Bearer {auth_token}"
+                auth_headers["Origin"] = "https://khanglobalstudies.com"
+                auth_headers["Referer"] = "https://khanglobalstudies.com/"
+                res = _SESSION.get(ep_url, headers=auth_headers, timeout=12)
+                if res.status_code == 200:
+                    data = res.json()
+                    if isinstance(data, dict) and not data.get("error") and data.get("status") is not False:
+                        set_cache(cache_key, data)
+                        return data.get("videos", []), data.get("notes", [])
+            except Exception as e:
+                logger.debug(f"KGS lesson fetch failed for {topic_id} at {ep_url}: {e}")
 
     url = LESSON_URL.format(topic_id)
     try:
