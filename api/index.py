@@ -3,9 +3,28 @@ import json
 import time
 import requests
 from requests.adapters import HTTPAdapter
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template_string
+
+from urllib.parse import unquote
 
 app = Flask(__name__)
+
+class VercelPathFixMiddleware:
+    def __init__(self, wsgi_app):
+        self.wsgi_app = wsgi_app
+
+    def __call__(self, environ, start_response):
+        query = environ.get('QUERY_STRING', '')
+        for param in query.split('&'):
+            if param.startswith('__path__='):
+                path_val = unquote(param.split('=', 1)[1])
+                environ['PATH_INFO'] = '/' + path_val.lstrip('/')
+                break
+        return self.wsgi_app(environ, start_response)
+
+app.wsgi_app = VercelPathFixMiddleware(app.wsgi_app)
+
+
 
 # Common browser request headers
 HEADERS = {
@@ -17,7 +36,7 @@ HEADERS = {
 
 # High-performance HTTP session
 _SESSION = requests.Session()
-_ADAPTER = HTTPAdapter(pool_connections=20, pool_maxsize=20, max_retries=1)
+_ADAPTER = HTTPAdapter(pool_connections=25, pool_maxsize=25, max_retries=1)
 _SESSION.mount("https://", _ADAPTER)
 _SESSION.mount("http://", _ADAPTER)
 
@@ -46,10 +65,13 @@ def get_valid_kgs_token():
     if _CURRENT_KGS_TOKEN:
         return _CURRENT_KGS_TOKEN
 
-    if KGS_PHONE and KGS_PASSWORD:
+    phone = os.getenv("KGS_PHONE", KGS_PHONE)
+    password = os.getenv("KGS_PASSWORD", KGS_PASSWORD)
+
+    if phone and password:
         for login_url in ["https://khanglobalstudies.com/api/login", "https://api.khanglobalstudies.com/cms/login"]:
             try:
-                res = _SESSION.post(login_url, json={"phone": KGS_PHONE, "password": KGS_PASSWORD}, headers=HEADERS, timeout=8)
+                res = _SESSION.post(login_url, json={"phone": phone, "password": password}, headers=HEADERS, timeout=8)
                 if res.status_code == 200:
                     data = res.json()
                     t = data.get("token")
@@ -112,7 +134,166 @@ def add_cors_headers(response):
     response.headers['Access-Control-Allow-Methods'] = 'GET, POST, OPTIONS'
     return response
 
+@app.errorhandler(404)
+def handle_404(e):
+    return jsonify({
+        "error": "Not Found",
+        "path": request.path,
+        "environ_path_info": request.environ.get("PATH_INFO"),
+        "x_matched_path": request.headers.get("x-matched-path"),
+        "x_forwarded_url": request.headers.get("x-forwarded-url")
+    }), 404
+
+
+LANDING_PAGE_HTML = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyMate Resilient API Engine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: radial-gradient(circle at top right, #1e1b4b, #0f172a, #020617);
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 760px;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 36px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(16, 185, 129, 0.15);
+            color: #34d399;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+        .badge span {
+            width: 8px;
+            height: 8px;
+            background: #10b981;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 8px #10b981;
+        }
+        h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+        p.subtitle { color: #94a3b8; font-size: 15px; margin-bottom: 28px; line-height: 1.5; }
+        .endpoints { display: flex; flex-direction: column; gap: 12px; }
+        .card {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            padding: 14px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.2s;
+        }
+        .card:hover {
+            background: rgba(30, 41, 59, 0.9);
+            border-color: rgba(99, 102, 241, 0.4);
+            transform: translateY(-2px);
+        }
+        .method {
+            background: #4f46e5;
+            color: #fff;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 700;
+            margin-right: 12px;
+        }
+        .route { font-family: monospace; font-size: 14px; color: #e2e8f0; }
+        .btn {
+            background: rgba(255, 255, 255, 0.08);
+            color: #cbd5e1;
+            padding: 6px 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+        .btn:hover { background: #6366f1; color: #fff; }
+        .footer { margin-top: 28px; font-size: 12px; color: #64748b; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="badge"><span></span> API Engine Live on Vercel</div>
+        <h1>StudyMate Resilient API</h1>
+        <p class="subtitle">Direct KGS live student session + StudyMate upstream failover engine. 100% compatible with StudyMate API contract.</p>
+
+        <div class="endpoints">
+            <div class="card">
+                <div>
+                    <span class="method">GET</span>
+                    <span class="route">/api/video/&lt;video_id&gt;</span>
+                </div>
+                <a href="/api/video/179326" target="_blank" class="btn">Test 179326</a>
+            </div>
+            <div class="card">
+                <div>
+                    <span class="method">GET</span>
+                    <span class="route">/api/lesson/&lt;topic_id&gt;</span>
+                </div>
+                <a href="/api/lesson/4326" target="_blank" class="btn">Test 4326</a>
+            </div>
+            <div class="card">
+                <div>
+                    <span class="method">GET</span>
+                    <span class="route">/api/classroom/&lt;course_id&gt;</span>
+                </div>
+                <a href="/api/classroom/470" target="_blank" class="btn">Test 470</a>
+            </div>
+            <div class="card">
+                <div>
+                    <span class="method">GET</span>
+                    <span class="route">/api/batches</span>
+                </div>
+                <a href="/api/batches" target="_blank" class="btn">Test Batches</a>
+            </div>
+            <div class="card">
+                <div>
+                    <span class="method">GET</span>
+                    <span class="route">/health</span>
+                </div>
+                <a href="/health" target="_blank" class="btn">Check Health</a>
+            </div>
+        </div>
+
+        <div class="footer">Deployed with Flask Serverless on Vercel • Zero downtime failover architecture</div>
+    </div>
+</body>
+</html>
+"""
+
 @app.route('/', methods=['GET'])
+def index():
+    if "application/json" in request.headers.get("Accept", ""):
+        return health()
+    return render_template_string(LANDING_PAGE_HTML)
+
 @app.route('/health', methods=['GET'])
 @app.route('/api/health', methods=['GET'])
 def health():
@@ -133,6 +314,7 @@ def fetch_official_kgs_batches():
     all_batches = []
     seen_ids = set()
 
+    # 1. Fetch live courses from official KGS API
     for page in range(1, 10):
         try:
             url = f"{KGS_COURSES_URL}?page={page}"
@@ -166,6 +348,7 @@ def fetch_official_kgs_batches():
             print(f"Error fetching official KGS courses page {page}: {e}")
             break
 
+    # 2. Merge with pre-bundled archive fallback for historical batch IDs
     fallback = get_fallback_batches()
     for b in fallback:
         bid = b.get("id")
@@ -202,10 +385,14 @@ def get_classroom(course_id):
         if res.status_code == 200:
             data = res.json()
             if data and data.get("classroom"):
+                for item in data.get("classroom", []):
+                    if not item.get("title"):
+                        item["title"] = item.get("name", "")
                 _MEM_CACHE[cache_key] = data
                 return jsonify(data)
     except Exception as e:
         print(f"StudyMate classroom error for course {course_id}: {e}")
+
 
     # Tier 2: KGS Live Course topics
     try:
@@ -239,7 +426,7 @@ def get_lesson(topic_id):
         return jsonify(_MEM_CACHE[cache_key])
 
     token = get_valid_kgs_token()
-    
+
     # Tier 1: Direct KGS Authenticated Lesson API
     if token:
         for ep in [
@@ -327,4 +514,4 @@ def get_video(video_id):
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 3000))
-    app.run(host='0.0.0.0', port=port, debug=False)
+    app.run(host='0.0.0.0', port=port, debug=True)
