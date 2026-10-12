@@ -63,23 +63,57 @@ def load_fallback_batches():
     return []
 
 def fetch_batches():
-    """Fetch 1000+ course batches with multi-tier failover (Live API -> SQLite Cache -> JSON Fallback)."""
+    """Fetch 1000+ course batches with multi-tier failover (Official KGS Live API -> SQLite Cache -> JSON Fallback)."""
     global _BATCH_CACHE
     if _BATCH_CACHE:
         return _BATCH_CACHE
 
     cache_key = "batches_list"
     try:
-        res = _SESSION.get(BATCHES_URL, headers=HEADERS, timeout=12)
-        if res.status_code == 200:
+        all_batches = []
+        seen_ids = set()
+        for page in range(1, 10):
+            url = f"https://khanglobalstudies.com/api/courses?page={page}"
+            res = _SESSION.get(url, headers=HEADERS, timeout=6)
+            if res.status_code != 200:
+                break
             data = res.json()
-            if data:
-                _BATCH_CACHE = data
-                set_cache(cache_key, data)
-                logger.info(f"Fetched {len(data)} batches from live API and cached successfully.")
-                return _BATCH_CACHE
+            items = data.get("data", [])
+            if not items:
+                break
+            for c in items:
+                cid = c.get("id")
+                if cid and cid not in seen_ids:
+                    seen_ids.add(cid)
+                    img = c.get("image") or {}
+                    thumb = img.get("thumb") or img.get("small") or img.get("medium") or img.get("large") if isinstance(img, dict) else ""
+                    price_val = c.get("price")
+                    price_str = f"₹{price_val}" if price_val and str(price_val) != "0" else ("Free" if c.get("is_free") else "Paid")
+                    all_batches.append({
+                        "id": cid,
+                        "title": (c.get("title") or "").strip(),
+                        "start_at": c.get("start_at") or c.get("registration_at") or "N/A",
+                        "end_at": c.get("end_at") or "Lifetime",
+                        "price": price_str,
+                        "image_thumb": thumb or "",
+                        "image_large": thumb or ""
+                    })
+            if page >= data.get("last_page", 1):
+                break
+
+        if all_batches:
+            fallback = load_fallback_batches()
+            for b in fallback:
+                bid = b.get("id")
+                if bid and bid not in seen_ids:
+                    seen_ids.add(bid)
+                    all_batches.append(b)
+            _BATCH_CACHE = all_batches
+            set_cache(cache_key, all_batches)
+            logger.info(f"Fetched {len(all_batches)} batches from official KGS API and cached successfully.")
+            return _BATCH_CACHE
     except Exception as e:
-        logger.warning(f"Live API for batches failed ({e}). Attempting failover...")
+        logger.warning(f"Live official KGS API for batches failed ({e}). Attempting failover...")
 
     # Tier 2: Check SQLite cache
     cached_data = get_cache(cache_key)

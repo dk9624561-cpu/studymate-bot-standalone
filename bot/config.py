@@ -6,8 +6,9 @@ load_dotenv()
 
 BOT_TOKEN = os.getenv("BOT_TOKEN", "8957554054:AAHF8lSks33v2GKUrwM10KV9DyepRN5VXaM")
 
-# API Endpoints
-BATCHES_URL = "https://sunnyji7256.github.io/kgs_batch_list/New_Sunny.json"
+# API Endpoints (Official Khan Global Studies & StudyMate)
+KGS_COURSES_URL = "https://khanglobalstudies.com/api/courses"
+BATCHES_URL = "https://khanglobalstudies.com/api/courses"
 CLASSROOM_URL = "https://study-mate.in/api/classroom/{}"
 LESSON_URL = "https://study-mate.in/api/lesson/{}"
 VIDEO_URL = "https://study-mate.in/api/video/{}"

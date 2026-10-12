@@ -26,7 +26,9 @@ KGS_PHONE = os.getenv("KGS_PHONE", "7544898925")
 KGS_PASSWORD = os.getenv("KGS_PASSWORD", "75448989")
 _CURRENT_KGS_TOKEN = os.getenv("KGS_TOKEN", "147419804|EOm8dRWhsJkHRS4Oatok5NBYIRwug62TpTx2DOIS14fefc33")
 
-BATCHES_URL = "https://sunnyji7256.github.io/kgs_batch_list/New_Sunny.json"
+# Official KGS Courses API Endpoints
+KGS_COURSES_URL = "https://khanglobalstudies.com/api/courses"
+KGS_V1_COURSES_URL = "https://api.khanglobalstudies.com/v1/courses"
 STUDYMATE_CLASSROOM_URL = "https://study-mate.in/api/classroom/{}"
 STUDYMATE_LESSON_URL = "https://study-mate.in/api/lesson/{}"
 STUDYMATE_VIDEO_URL = "https://study-mate.in/api/video/{}"
@@ -126,22 +128,67 @@ def health():
         }
     })
 
+def fetch_official_kgs_batches():
+    """Fetch batches directly from official Khan Global Studies API with local archive merge."""
+    all_batches = []
+    seen_ids = set()
+
+    for page in range(1, 10):
+        try:
+            url = f"{KGS_COURSES_URL}?page={page}"
+            res = _SESSION.get(url, headers=HEADERS, timeout=6)
+            if res.status_code != 200:
+                break
+            data = res.json()
+            items = data.get("data", [])
+            if not items:
+                break
+            for c in items:
+                cid = c.get("id")
+                if cid and cid not in seen_ids:
+                    seen_ids.add(cid)
+                    img = c.get("image") or {}
+                    thumb = img.get("thumb") or img.get("small") or img.get("medium") or img.get("large") if isinstance(img, dict) else ""
+                    price_val = c.get("price")
+                    price_str = f"₹{price_val}" if price_val and str(price_val) != "0" else ("Free" if c.get("is_free") else "Paid")
+                    all_batches.append({
+                        "id": cid,
+                        "title": (c.get("title") or "").strip(),
+                        "start_at": c.get("start_at") or c.get("registration_at") or "N/A",
+                        "end_at": c.get("end_at") or "Lifetime",
+                        "price": price_str,
+                        "image_thumb": thumb or "",
+                        "image_large": thumb or ""
+                    })
+            if page >= data.get("last_page", 1):
+                break
+        except Exception as e:
+            print(f"Error fetching official KGS courses page {page}: {e}")
+            break
+
+    fallback = get_fallback_batches()
+    for b in fallback:
+        bid = b.get("id")
+        if bid and bid not in seen_ids:
+            seen_ids.add(bid)
+            all_batches.append(b)
+
+    return all_batches
+
 @app.route('/api/batches', methods=['GET'])
 def get_batches():
     global _BATCHES_CACHE
     if _BATCHES_CACHE:
         return jsonify(_BATCHES_CACHE)
 
-    try:
-        res = _SESSION.get(BATCHES_URL, headers=HEADERS, timeout=10)
-        if res.status_code == 200:
-            _BATCHES_CACHE = res.json()
-            return jsonify(_BATCHES_CACHE)
-    except Exception as e:
-        print("Live batches fetch error, using pre-bundled fallback:", e)
+    batches = fetch_official_kgs_batches()
+    if batches:
+        _BATCHES_CACHE = batches
+        return jsonify(_BATCHES_CACHE)
 
     _BATCHES_CACHE = get_fallback_batches()
     return jsonify(_BATCHES_CACHE)
+
 
 @app.route('/api/classroom/<int:course_id>', methods=['GET'])
 def get_classroom(course_id):
